@@ -54,9 +54,7 @@ async def gs(ctx,*, query):
     await ctx.author.send(f"Here are the links related to your question!")
     for j in search(query, safe='on', start=1, stop=1):
         await ctx.author.send(f"\n:point_right: {j}")
-        await ctx.author.send(
-            "Have any more questions:question:\nFeel free to ask again :smiley: !"
-        )
+        await ctx.author.send("Have any more questions:question:\nFeel free to ask again :smiley: !")
 
 
 @bot.command()

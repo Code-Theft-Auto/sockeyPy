@@ -94,6 +94,6 @@ async def meme_(ctx):
             break
 
 
-TOKEN = str(input("token: "))
+TOKEN = str(os.getenv('TOKEN'))
 keep_alive.keep_alive()
 bot.run(TOKEN)  # client login

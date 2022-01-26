@@ -9,6 +9,7 @@ import impfunctions as func
 from datetime import date, datetime
 from discord.ext.commands import Bot
 from discord.ext import commands
+from discord_slash.model import ButtonStyle
 from discord_slash.utils.manage_components import create_button, create_actionrow
 from discord_slash.utils.manage_components import ComponentContext, wait_for_component
 

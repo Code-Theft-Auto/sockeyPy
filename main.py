@@ -75,23 +75,7 @@ async def servname(ctx):
     await ctx.send(embed=discord.Embed(description=f"\n".join(names),color=discord.Color.green()))
 
 
-NEXTBUTTON = [
-    create_button(ButtonStyle.green, label="Next", custom_id="NextMeme")
-]
 
-
-@bot.command(name="meme")
-async def meme_(ctx):
-    em = func.meme()
-    await ctx.send(embed=em, components=[create_actionrow(*NEXTBUTTON)])
-
-    while 1:
-        try:
-            button_ctx: ComponentContext = await wait_for_component(
-                bot, components=NEXTBUTTON, timeout=10)
-            await button_ctx.edit_origin(embed=func.meme())
-        except asyncio.exceptions.TimeoutError:
-            break
 
 
 TOKEN = str(os.getenv('TOKEN'))

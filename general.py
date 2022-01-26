@@ -17,7 +17,8 @@ from discord_slash.utils.manage_components import ComponentContext, wait_for_com
 NEXTBUTTON = [create_button(ButtonStyle.green, label="Next", custom_id="NextMeme")]
 ctx = discord.ext.commands.context.Context
 message = discord.ext.commands.context.Context
-bot = discord.bot()
+
+
 
 DOGAPI = "http://thedogapi.com/api/images/get.php"
 CATAPI = "http://thecatapi.com/api/images/get.php"
@@ -117,7 +118,7 @@ class General(commands.Cog):
         while 1:
             try:
                 button_ctx: ComponentContext = await wait_for_component(
-                bot, components=NEXTBUTTON, timeout=10)
+                self.bot, components=NEXTBUTTON, timeout=10)
 
                 await button_ctx.edit_origin(embed=func.meme())
             except asyncio.exceptions.TimeoutError:

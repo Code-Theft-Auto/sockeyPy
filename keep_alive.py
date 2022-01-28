@@ -38,10 +38,6 @@ def mainraw():
     rawdata = f.read()
     return rawdata
 
-@app.route('/testing')
-def testing():
-  with open('testing.py','r') as f:
-    return f.read()
 
 def run():
     app.run(host='0.0.0.0', port=8080)

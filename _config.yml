@@ -2,3 +2,4 @@ theme: jekyll-theme-minimal
 title: sockey
 show_downloads: true
 logo: https://cdn.discordapp.com/avatars/916685474364534805/2a135685bf9e74807507974e16c87c6e.webp
+prefers-color-scheme: dark

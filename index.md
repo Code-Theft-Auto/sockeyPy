@@ -2,7 +2,7 @@
 
 A simple discord.py general purpose music bot
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![https://discord.com/api/oauth2/authorize?client_id=916685474364534805&permissions=275147647024&scope=bot%20applications.commands](https://user-images.githubusercontent.com/78902540/153714070-79edddbb-21a5-45e2-8a70-a54c8c52a933.png)
 
 ### Markdown
 

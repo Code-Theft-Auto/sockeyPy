@@ -1,5 +1,6 @@
 from flask import Flask
 from threading import Thread
+from os import getenv
 
 app = Flask('')
 
@@ -9,7 +10,7 @@ def home():
 
 
 def run():
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=getenv('PORT'))
 
 
 def keep_alive():

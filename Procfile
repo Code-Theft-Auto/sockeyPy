@@ -1,1 +1,1 @@
-worker: python main.py
+worker: sudo python main.py

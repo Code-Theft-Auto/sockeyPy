@@ -14,8 +14,6 @@ import asyncio
 import possiblekeywords
 from googlesearch import search
 import impfunctions as func
-from datetime import date, datetime
-from discord.ext.commands import Bot
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 
@@ -35,12 +33,19 @@ from functools import partial
 import youtube_dl
 from youtube_dl import YoutubeDL
 import youtube_search as yt
+
+
 ctx = discord.ext.commands.context.Context
 message = discord.ext.commands.context.Context
 
 DOGAPI = os.getenv('DOGAPI')
-
 CATAPI = os.getenv('CATAPI')
+
+
+
+
+
+
 
 
 class General(commands.Cog):

@@ -1,17 +1,14 @@
 import os,sys,discord,asyncio
 import base64 as b64
-
 sys.path.insert(1, 'modules/')
 
 import possiblekeywords
 from googlesearch import search
 import impfunctions as func
-from datetime import date, datetime
 from discord.ext.commands import Bot
 from discord.ext import commands
 from discord_slash.model import ButtonStyle
-from discord_slash.utils.manage_components import create_button, create_actionrow
-from discord_slash.utils.manage_components import ComponentContext, wait_for_component
+from discord_slash.utils.manage_components import ComponentContext, wait_for_component,create_button,create_actionrow
 
 
 NEXTBUTTON = [create_button(ButtonStyle.green, label="Next", custom_id="NextMeme")]

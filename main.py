@@ -1,25 +1,14 @@
 import os
 import sys
-
 sys.path.insert(1, './modules')
-import json
 
-import asyncio
 import discord
-import datetime
 import keep_alive
-import youtube_dl
-import discord_slash
-from os import getenv
-import impfunctions as func
-from keywords import KEYWORD
 from googlesearch import search
 from discord.ext import commands
-from youtube_dl import YoutubeDL
 from discord_slash import SlashCommand
-from discord_slash.model import ButtonStyle
-from discord_slash.utils.manage_components import create_button, create_actionrow
-from discord_slash.utils.manage_components import ComponentContext, wait_for_component
+
+
 
 bot = commands.Bot(command_prefix='.', help_command=None)
 

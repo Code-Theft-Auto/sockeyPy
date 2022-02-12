@@ -1,5 +1,7 @@
-theme: jekyll-theme-minimal
+remote_theme: "godalming123/minimal"
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 title: sockey
 show_downloads: true
 logo: https://cdn.discordapp.com/avatars/916685474364534805/2a135685bf9e74807507974e16c87c6e.webp
-prefers-color-scheme: dark
+color-scheme: "dark"

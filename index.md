@@ -1,37 +1,28 @@
-## sockey ![sockey](https://cdn.discordapp.com/avatars/916685474364534805/2a135685bf9e74807507974e16c87c6e.webp?size=80)
+## sockey 
 
 A simple discord.py general purpose music bot
 
-![image](https://user-images.githubusercontent.com/78902540/153714070-79edddbb-21a5-45e2-8a70-a54c8c52a933.png "https://discord.com/api/oauth2/authorize?client_id=916685474364534805&permissions=275147647024&scope=bot%20applications.commands")
 
-### Markdown
+[![homepage](https://user-images.githubusercontent.com/78902540/153714070-79edddbb-21a5-45e2-8a70-a54c8c52a933.png )](https://discord.com/api/oauth2/authorize?client_id=916685474364534805&permissions=275147647024&scope=bot%20applications.commands "invite link")
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u want to 
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## setup if u want to run by yourself
+- `git clone https://github.com/DevER-M/sockeyPy.git`
+- `cd sockeyPy`
+- *make sure you have python and pip in the latest version*
+- `pip install -r requirements.txt`
+- make a file called .env
+- inside the .env file add your token as ```TOKEN=YOUR TOKEN```
+- `python main.py` or `py main.py`
 
-**Bold** and _Italic_ and `Code` text
+## Bot commands
+![help menu](https://user-images.githubusercontent.com/78902540/153714982-5e7296f7-30a0-44fa-ab9a-6a17d88db499.png)
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DevER-M/sockeyPy/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+******
+**Bot made by** *`b5a862f475b9e4fb7e241a32470dbd07#3365`*

@@ -19,7 +19,7 @@ beats_activity = [discord.ActivityType.listening, "Beats"]
 cogs = [
     'general',
     'music',
-    'slashcog'
+    'slashcog',
     'coglur'
 ]
 

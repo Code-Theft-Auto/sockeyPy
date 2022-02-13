@@ -37,4 +37,4 @@ class Owner(commands.Cog):
             await ctx.send('👌')
 
 def setup(bot):
-    bot.add_Cog(Owner)
+    bot.add_Cog(Owner(bot))

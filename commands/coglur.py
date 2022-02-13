@@ -1,12 +1,11 @@
-import discord
 from discord.ext import commands
-
+from discord.ext.commands import Bot
 class Owner(commands.Cog):
     __slots__ = ('bot')
     def __init__(self, bot):
         self.bot = bot
     
-    @commands.command(help="Load a cog")
+    @commands.command()
     @commands.is_owner()
     async def load(self, ctx, *, cog):
         try:
@@ -16,7 +15,7 @@ class Owner(commands.Cog):
         else:
             await ctx.send('👌')
 
-    @commands.command(help="Unload a cog")
+    @commands.command()
     @commands.is_owner()
     async def unload(self, ctx, *, cog):
         try:
@@ -26,7 +25,7 @@ class Owner(commands.Cog):
         else:
             await ctx.send('👌')
 
-    @commands.command(help="Reload a cog")
+    @commands.command()
     @commands.is_owner()
     async def reload(self, ctx, *, cog):
         try:
@@ -36,5 +35,7 @@ class Owner(commands.Cog):
         else:
             await ctx.send('👌')
 
-def setup(bot):
-    bot.add_Cog(Owner(bot))
+
+
+def setup(bot: Bot):
+    bot.add_cog(Owner(bot))

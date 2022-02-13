@@ -1,6 +1,6 @@
 import os,sys,discord,asyncio
 import base64 as b64
-sys.path.insert(1, 'modules/')
+sys.path.insert(1, '../modules')
 
 import possiblekeywords
 from googlesearch import search
@@ -120,7 +120,25 @@ class General(commands.Cog):
                 await button_ctx.edit_origin(embed=func.meme())
             except asyncio.exceptions.TimeoutError:
                 break
+    
+    @commands.command(name="gs")
+    async def gs(self, ctx, *, query):
+        await ctx.author.send(f"Here are the links related to your question!")
+        for j in search(query, safe='on', start=1, stop=1):
+            await ctx.author.send(f"\n:point_right: {j}")
+            await ctx.author.send("Have any more questions:question:\nFeel free to ask again :smiley: !")
+    
+    @commands.command(name="servers")
+    async def servers(self, ctx):
+        await ctx.send(
+            embed=discord.Embed(description=f"`i am in {len(self.bot.guilds)} guilds`",
+                            color=discord.Color.green()))
 
+    @commands.command(name="servname")
+    async def servname(self,ctx):
+        names = []
+        for guild in self.bot.guilds:names.append(f"**`{guild.name}`**")
+        await ctx.send(embed=discord.Embed(description=f"\n".join(names),color=discord.Color.green()))
 
 
 def setup(bot):

@@ -1,5 +1,5 @@
 import discord
-import discord.ext
+from discord.ext import commands
 
 class Owner(commands.Cog):
 

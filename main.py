@@ -20,7 +20,8 @@ cogs = [
     'general',
     'music',
     'slashcog',
-    'coglur'
+    'coglur',
+    'serveronly'
 ]
 
 

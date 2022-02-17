@@ -16,7 +16,7 @@ You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u wan
 - *make sure you have python and pip in the latest version*
 - `pip install -r requirements.txt`
 - make a file called .env
-- Add your token in this [line](github.com/DevER-M/sockeyPy/blob/master/main.py#L42) ```bot.run(<YOURTOKEN>)```
+- Add your token in this [line](/main.py#L42) ```bot.run(<YOURTOKEN>)```
 - `python main.py` or `py main.py`
 
 ## Bot commands

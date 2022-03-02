@@ -1,5 +1,10 @@
 aiohttp>=3.6.0,<3.8.0
 colorama
 orjson
-soupsieve >1.2
+soupsieve==1.2
 lxml
+cryptography
+chardet>=3.0.2,<5
+idna>=2.5,<3
+urllib3>=1.21.1,<1.27
+certifi>=2017.4.17

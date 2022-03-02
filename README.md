@@ -16,7 +16,7 @@ You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u wan
 - *make sure you have python and pip in the latest version*
 - `pip install -r requirements.txt`
 - make a file called .env
-- inside the .env file add your token as ```TOKEN=YOUR TOKEN```
+- Add your token in this [line](/main.py#L42) ```bot.run(<YOURTOKEN>)```
 - `python main.py` or `py main.py`
 
 ## Bot commands

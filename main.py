@@ -36,6 +36,6 @@ for file in cogs:
     bot.load_extension(f'cogs.{file}')
 
 
-TOKEN = str(os.getenv('TOKEN') or input("enter bot token: "))
-keep_alive.keep_alive()
+TOKEN = str(os.getenv('TOKEN'))
+#keep_alive.keep_alive()
 bot.run(TOKEN)  # client login

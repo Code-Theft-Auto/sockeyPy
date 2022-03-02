@@ -5,7 +5,7 @@ sys.path.insert(1, './modules')
 from imports import discord
 import modules.keep_alive as keep_alive
 from googlesearch import search
-from discord.ext import commands
+from imports.discord.ext import commands
 from imports.discord_slash import SlashCommand
 
 

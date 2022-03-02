@@ -1,9 +1,7 @@
 import random
 import requests
-import os
 import requests as req
-import discord
-import discord.ext
+from imports import discord
 from bs4 import BeautifulSoup
 from cryptography.fernet import Fernet
 

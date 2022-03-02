@@ -1,0 +1,2048 @@
+Beautiful soup diagnose test:
+==============================================================================
+Diagnostic running on Beautiful Soup 4.9.3
+Python version 2.7.18 (default, Aug  4 2020, 11:16:42) 
+[GCC 9.3.0]
+Found lxml version 4.2.3.0
+Found html5lib version 1.0.1
+
+Trying to parse your markup with html.parser
+Here's what html.parser did with the markup:
+<?xml version='1.0' encoding='UTF-8'?>
+<package unique-identifier="id" version="2.0" xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <metadata>
+  <dc:rights>
+   Public domain in the USA.
+  </dc:rights>
+  <dc:identifier id="id" opf:scheme="URI">
+   http://www.gutenberg.org/2600
+  </dc:identifier>
+  <dc:creator opf:file-as="Tolstoy, Leo, graf">
+   graf Leo Tolstoy
+  </dc:creator>
+  <dc:contributor opf:file-as="Maude, Aylmer" opf:role="trl">
+   Aylmer Maude
+  </dc:contributor>
+  <dc:contributor opf:file-as="Maude, Louise" opf:role="trl">
+   Louise Maude
+  </dc:contributor>
+  <dc:title>
+   War and Peace
+  </dc:title>
+  <dc:language xsi:type="dcterms:RFC4646">
+   en
+  </dc:language>
+  <dc:subject>
+   Historical fiction
+  </dc:subject>
+  <dc:subject>
+   War stories
+  </dc:subject>
+  <dc:subject>
+   Napoleonic Wars, 1800-1815 -- Campaigns -- Russia -- Fiction
+  </dc:subject>
+  <dc:subject>
+   Russia -- History -- Alexander I, 1801-1825 -- Fiction
+  </dc:subject>
+  <dc:subject>
+   Aristocracy (Social class) -- Russia -- Fiction
+  </dc:subject>
+  <dc:date opf:event="publication">
+   2001-04-01
+  </dc:date>
+  <dc:date opf:event="conversion">
+   2020-04-02T07:55:23.696736+00:00
+  </dc:date>
+  <dc:source>
+   https://www.gutenberg.org/files/2600/2600-h/2600-h.htm
+  </dc:source>
+  <meta content="item1" name="cover"/>
+ </metadata>
+ <manifest>
+  <!--Image: 484 x 700 size=108909 q=90-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@images@cover.jpg" id="item1" media-type="image/jpeg">
+  </item>
+  <item href="pgepub.css" id="item2" media-type="text/css">
+  </item>
+  <item href="0.css" id="item3" media-type="text/css">
+  </item>
+  <item href="1.css" id="item4" media-type="text/css">
+  </item>
+  <!--Chunk: size=57550 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-0.htm.html" id="item5" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=58304 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-1.htm.html" id="item6" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=52760 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-2.htm.html" id="item7" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=57074 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-3.htm.html" id="item8" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=52377 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-4.htm.html" id="item9" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=70163 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-5.htm.html" id="item10" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=60805 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-6.htm.html" id="item11" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=61815 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-7.htm.html" id="item12" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=51653 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-8.htm.html" id="item13" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=64801 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-9.htm.html" id="item14" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=51852 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-10.htm.html" id="item15" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=70173 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-11.htm.html" id="item16" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=63821 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-12.htm.html" id="item17" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=53220 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-13.htm.html" id="item18" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=51538 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-14.htm.html" id="item19" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=56744 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-15.htm.html" id="item20" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=53690 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-16.htm.html" id="item21" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=58241 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-17.htm.html" id="item22" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=57692 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-18.htm.html" id="item23" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=58285 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-19.htm.html" id="item24" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=57202 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-20.htm.html" id="item25" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=63300 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-21.htm.html" id="item26" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=60258 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-22.htm.html" id="item27" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=55844 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-23.htm.html" id="item28" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54441 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-24.htm.html" id="item29" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54570 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-25.htm.html" id="item30" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=52393 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-26.htm.html" id="item31" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=51987 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-27.htm.html" id="item32" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=67760 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-28.htm.html" id="item33" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=63989 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-29.htm.html" id="item34" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=63702 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-30.htm.html" id="item35" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=59862 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-31.htm.html" id="item36" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54267 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-32.htm.html" id="item37" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=59292 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-33.htm.html" id="item38" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=56661 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-34.htm.html" id="item39" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=60083 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-35.htm.html" id="item40" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=56200 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-36.htm.html" id="item41" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=56136 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-37.htm.html" id="item42" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=59126 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-38.htm.html" id="item43" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=53080 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-39.htm.html" id="item44" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54926 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-40.htm.html" id="item45" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=67086 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-41.htm.html" id="item46" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=57293 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-42.htm.html" id="item47" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54513 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-43.htm.html" id="item48" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=64103 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-44.htm.html" id="item49" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=57653 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-45.htm.html" id="item50" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=55452 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-46.htm.html" id="item51" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=59269 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-47.htm.html" id="item52" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=53393 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-48.htm.html" id="item53" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=51746 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-49.htm.html" id="item54" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=58540 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-50.htm.html" id="item55" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=66538 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-51.htm.html" id="item56" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=53240 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-52.htm.html" id="item57" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54375 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-53.htm.html" id="item58" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54268 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-54.htm.html" id="item59" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54373 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-55.htm.html" id="item60" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=58744 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-56.htm.html" id="item61" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=53208 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-57.htm.html" id="item62" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=53405 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-58.htm.html" id="item63" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=53793 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-59.htm.html" id="item64" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=54766 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-60.htm.html" id="item65" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=55485 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-61.htm.html" id="item66" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=51658 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-62.htm.html" id="item67" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=52806 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-63.htm.html" id="item68" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=58713 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-64.htm.html" id="item69" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=57610 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-65.htm.html" id="item70" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=60847 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-66.htm.html" id="item71" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=57840 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-67.htm.html" id="item72" media-type="application/xhtml+xml">
+  </item>
+  <!--Chunk: size=68925-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-68.htm.html" id="item73" media-type="application/xhtml+xml">
+  </item>
+  <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml">
+  </item>
+  <item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml">
+  </item>
+ </manifest>
+ <spine toc="ncx">
+  <itemref idref="coverpage-wrapper" linear="yes">
+  </itemref>
+  <itemref idref="item5" linear="yes">
+  </itemref>
+  <itemref idref="item6" linear="yes">
+  </itemref>
+  <itemref idref="item7" linear="yes">
+  </itemref>
+  <itemref idref="item8" linear="yes">
+  </itemref>
+  <itemref idref="item9" linear="yes">
+  </itemref>
+  <itemref idref="item10" linear="yes">
+  </itemref>
+  <itemref idref="item11" linear="yes">
+  </itemref>
+  <itemref idref="item12" linear="yes">
+  </itemref>
+  <itemref idref="item13" linear="yes">
+  </itemref>
+  <itemref idref="item14" linear="yes">
+  </itemref>
+  <itemref idref="item15" linear="yes">
+  </itemref>
+  <itemref idref="item16" linear="yes">
+  </itemref>
+  <itemref idref="item17" linear="yes">
+  </itemref>
+  <itemref idref="item18" linear="yes">
+  </itemref>
+  <itemref idref="item19" linear="yes">
+  </itemref>
+  <itemref idref="item20" linear="yes">
+  </itemref>
+  <itemref idref="item21" linear="yes">
+  </itemref>
+  <itemref idref="item22" linear="yes">
+  </itemref>
+  <itemref idref="item23" linear="yes">
+  </itemref>
+  <itemref idref="item24" linear="yes">
+  </itemref>
+  <itemref idref="item25" linear="yes">
+  </itemref>
+  <itemref idref="item26" linear="yes">
+  </itemref>
+  <itemref idref="item27" linear="yes">
+  </itemref>
+  <itemref idref="item28" linear="yes">
+  </itemref>
+  <itemref idref="item29" linear="yes">
+  </itemref>
+  <itemref idref="item30" linear="yes">
+  </itemref>
+  <itemref idref="item31" linear="yes">
+  </itemref>
+  <itemref idref="item32" linear="yes">
+  </itemref>
+  <itemref idref="item33" linear="yes">
+  </itemref>
+  <itemref idref="item34" linear="yes">
+  </itemref>
+  <itemref idref="item35" linear="yes">
+  </itemref>
+  <itemref idref="item36" linear="yes">
+  </itemref>
+  <itemref idref="item37" linear="yes">
+  </itemref>
+  <itemref idref="item38" linear="yes">
+  </itemref>
+  <itemref idref="item39" linear="yes">
+  </itemref>
+  <itemref idref="item40" linear="yes">
+  </itemref>
+  <itemref idref="item41" linear="yes">
+  </itemref>
+  <itemref idref="item42" linear="yes">
+  </itemref>
+  <itemref idref="item43" linear="yes">
+  </itemref>
+  <itemref idref="item44" linear="yes">
+  </itemref>
+  <itemref idref="item45" linear="yes">
+  </itemref>
+  <itemref idref="item46" linear="yes">
+  </itemref>
+  <itemref idref="item47" linear="yes">
+  </itemref>
+  <itemref idref="item48" linear="yes">
+  </itemref>
+  <itemref idref="item49" linear="yes">
+  </itemref>
+  <itemref idref="item50" linear="yes">
+  </itemref>
+  <itemref idref="item51" linear="yes">
+  </itemref>
+  <itemref idref="item52" linear="yes">
+  </itemref>
+  <itemref idref="item53" linear="yes">
+  </itemref>
+  <itemref idref="item54" linear="yes">
+  </itemref>
+  <itemref idref="item55" linear="yes">
+  </itemref>
+  <itemref idref="item56" linear="yes">
+  </itemref>
+  <itemref idref="item57" linear="yes">
+  </itemref>
+  <itemref idref="item58" linear="yes">
+  </itemref>
+  <itemref idref="item59" linear="yes">
+  </itemref>
+  <itemref idref="item60" linear="yes">
+  </itemref>
+  <itemref idref="item61" linear="yes">
+  </itemref>
+  <itemref idref="item62" linear="yes">
+  </itemref>
+  <itemref idref="item63" linear="yes">
+  </itemref>
+  <itemref idref="item64" linear="yes">
+  </itemref>
+  <itemref idref="item65" linear="yes">
+  </itemref>
+  <itemref idref="item66" linear="yes">
+  </itemref>
+  <itemref idref="item67" linear="yes">
+  </itemref>
+  <itemref idref="item68" linear="yes">
+  </itemref>
+  <itemref idref="item69" linear="yes">
+  </itemref>
+  <itemref idref="item70" linear="yes">
+  </itemref>
+  <itemref idref="item71" linear="yes">
+  </itemref>
+  <itemref idref="item72" linear="yes">
+  </itemref>
+  <itemref idref="item73" linear="yes">
+  </itemref>
+ </spine>
+ <guide>
+  <reference href="wrap0000.html" title="Cover" type="cover">
+  </reference>
+ </guide>
+</package>
+--------------------------------------------------------------------------------
+Trying to parse your markup with html5lib
+Here's what html5lib did with the markup:
+<!--?xml version='1.0' encoding='UTF-8'?-->
+<html>
+ <head>
+ </head>
+ <body>
+  <package unique-identifier="id" version="2.0" xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <metadata>
+    <dc:rights>
+     Public domain in the USA.
+    </dc:rights>
+    <dc:identifier id="id" opf:scheme="URI">
+     http://www.gutenberg.org/2600
+    </dc:identifier>
+    <dc:creator opf:file-as="Tolstoy, Leo, graf">
+     graf Leo Tolstoy
+    </dc:creator>
+    <dc:contributor opf:file-as="Maude, Aylmer" opf:role="trl">
+     Aylmer Maude
+    </dc:contributor>
+    <dc:contributor opf:file-as="Maude, Louise" opf:role="trl">
+     Louise Maude
+    </dc:contributor>
+    <dc:title>
+     War and Peace
+    </dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">
+     en
+    </dc:language>
+    <dc:subject>
+     Historical fiction
+    </dc:subject>
+    <dc:subject>
+     War stories
+    </dc:subject>
+    <dc:subject>
+     Napoleonic Wars, 1800-1815 -- Campaigns -- Russia -- Fiction
+    </dc:subject>
+    <dc:subject>
+     Russia -- History -- Alexander I, 1801-1825 -- Fiction
+    </dc:subject>
+    <dc:subject>
+     Aristocracy (Social class) -- Russia -- Fiction
+    </dc:subject>
+    <dc:date opf:event="publication">
+     2001-04-01
+    </dc:date>
+    <dc:date opf:event="conversion">
+     2020-04-02T07:55:23.696736+00:00
+    </dc:date>
+    <dc:source>
+     https://www.gutenberg.org/files/2600/2600-h/2600-h.htm
+    </dc:source>
+    <meta content="item1" name="cover"/>
+   </metadata>
+   <manifest>
+    <!--Image: 484 x 700 size=108909 q=90-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@images@cover.jpg" id="item1" media-type="image/jpeg">
+     <item href="pgepub.css" id="item2" media-type="text/css">
+      <item href="0.css" id="item3" media-type="text/css">
+       <item href="1.css" id="item4" media-type="text/css">
+        <!--Chunk: size=57550 Split on div-->
+        <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-0.htm.html" id="item5" media-type="application/xhtml+xml">
+         <!--Chunk: size=58304 Split on div-->
+         <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-1.htm.html" id="item6" media-type="application/xhtml+xml">
+          <!--Chunk: size=52760 Split on div-->
+          <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-2.htm.html" id="item7" media-type="application/xhtml+xml">
+           <!--Chunk: size=57074 Split on div-->
+           <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-3.htm.html" id="item8" media-type="application/xhtml+xml">
+            <!--Chunk: size=52377 Split on div-->
+            <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-4.htm.html" id="item9" media-type="application/xhtml+xml">
+             <!--Chunk: size=70163 Split on div-->
+             <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-5.htm.html" id="item10" media-type="application/xhtml+xml">
+              <!--Chunk: size=60805 Split on div-->
+              <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-6.htm.html" id="item11" media-type="application/xhtml+xml">
+               <!--Chunk: size=61815 Split on div-->
+               <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-7.htm.html" id="item12" media-type="application/xhtml+xml">
+                <!--Chunk: size=51653 Split on div-->
+                <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-8.htm.html" id="item13" media-type="application/xhtml+xml">
+                 <!--Chunk: size=64801 Split on div-->
+                 <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-9.htm.html" id="item14" media-type="application/xhtml+xml">
+                  <!--Chunk: size=51852 Split on div-->
+                  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-10.htm.html" id="item15" media-type="application/xhtml+xml">
+                   <!--Chunk: size=70173 Split on div-->
+                   <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-11.htm.html" id="item16" media-type="application/xhtml+xml">
+                    <!--Chunk: size=63821 Split on div-->
+                    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-12.htm.html" id="item17" media-type="application/xhtml+xml">
+                     <!--Chunk: size=53220 Split on div-->
+                     <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-13.htm.html" id="item18" media-type="application/xhtml+xml">
+                      <!--Chunk: size=51538 Split on div-->
+                      <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-14.htm.html" id="item19" media-type="application/xhtml+xml">
+                       <!--Chunk: size=56744 Split on div-->
+                       <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-15.htm.html" id="item20" media-type="application/xhtml+xml">
+                        <!--Chunk: size=53690 Split on div-->
+                        <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-16.htm.html" id="item21" media-type="application/xhtml+xml">
+                         <!--Chunk: size=58241 Split on div-->
+                         <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-17.htm.html" id="item22" media-type="application/xhtml+xml">
+                          <!--Chunk: size=57692 Split on div-->
+                          <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-18.htm.html" id="item23" media-type="application/xhtml+xml">
+                           <!--Chunk: size=58285 Split on div-->
+                           <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-19.htm.html" id="item24" media-type="application/xhtml+xml">
+                            <!--Chunk: size=57202 Split on div-->
+                            <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-20.htm.html" id="item25" media-type="application/xhtml+xml">
+                             <!--Chunk: size=63300 Split on div-->
+                             <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-21.htm.html" id="item26" media-type="application/xhtml+xml">
+                              <!--Chunk: size=60258 Split on div-->
+                              <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-22.htm.html" id="item27" media-type="application/xhtml+xml">
+                               <!--Chunk: size=55844 Split on div-->
+                               <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-23.htm.html" id="item28" media-type="application/xhtml+xml">
+                                <!--Chunk: size=54441 Split on div-->
+                                <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-24.htm.html" id="item29" media-type="application/xhtml+xml">
+                                 <!--Chunk: size=54570 Split on div-->
+                                 <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-25.htm.html" id="item30" media-type="application/xhtml+xml">
+                                  <!--Chunk: size=52393 Split on div-->
+                                  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-26.htm.html" id="item31" media-type="application/xhtml+xml">
+                                   <!--Chunk: size=51987 Split on div-->
+                                   <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-27.htm.html" id="item32" media-type="application/xhtml+xml">
+                                    <!--Chunk: size=67760 Split on div-->
+                                    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-28.htm.html" id="item33" media-type="application/xhtml+xml">
+                                     <!--Chunk: size=63989 Split on div-->
+                                     <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-29.htm.html" id="item34" media-type="application/xhtml+xml">
+                                      <!--Chunk: size=63702 Split on div-->
+                                      <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-30.htm.html" id="item35" media-type="application/xhtml+xml">
+                                       <!--Chunk: size=59862 Split on div-->
+                                       <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-31.htm.html" id="item36" media-type="application/xhtml+xml">
+                                        <!--Chunk: size=54267 Split on div-->
+                                        <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-32.htm.html" id="item37" media-type="application/xhtml+xml">
+                                         <!--Chunk: size=59292 Split on div-->
+                                         <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-33.htm.html" id="item38" media-type="application/xhtml+xml">
+                                          <!--Chunk: size=56661 Split on div-->
+                                          <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-34.htm.html" id="item39" media-type="application/xhtml+xml">
+                                           <!--Chunk: size=60083 Split on div-->
+                                           <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-35.htm.html" id="item40" media-type="application/xhtml+xml">
+                                            <!--Chunk: size=56200 Split on div-->
+                                            <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-36.htm.html" id="item41" media-type="application/xhtml+xml">
+                                             <!--Chunk: size=56136 Split on div-->
+                                             <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-37.htm.html" id="item42" media-type="application/xhtml+xml">
+                                              <!--Chunk: size=59126 Split on div-->
+                                              <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-38.htm.html" id="item43" media-type="application/xhtml+xml">
+                                               <!--Chunk: size=53080 Split on div-->
+                                               <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-39.htm.html" id="item44" media-type="application/xhtml+xml">
+                                                <!--Chunk: size=54926 Split on div-->
+                                                <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-40.htm.html" id="item45" media-type="application/xhtml+xml">
+                                                 <!--Chunk: size=67086 Split on div-->
+                                                 <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-41.htm.html" id="item46" media-type="application/xhtml+xml">
+                                                  <!--Chunk: size=57293 Split on div-->
+                                                  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-42.htm.html" id="item47" media-type="application/xhtml+xml">
+                                                   <!--Chunk: size=54513 Split on div-->
+                                                   <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-43.htm.html" id="item48" media-type="application/xhtml+xml">
+                                                    <!--Chunk: size=64103 Split on div-->
+                                                    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-44.htm.html" id="item49" media-type="application/xhtml+xml">
+                                                     <!--Chunk: size=57653 Split on div-->
+                                                     <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-45.htm.html" id="item50" media-type="application/xhtml+xml">
+                                                      <!--Chunk: size=55452 Split on div-->
+                                                      <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-46.htm.html" id="item51" media-type="application/xhtml+xml">
+                                                       <!--Chunk: size=59269 Split on div-->
+                                                       <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-47.htm.html" id="item52" media-type="application/xhtml+xml">
+                                                        <!--Chunk: size=53393 Split on div-->
+                                                        <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-48.htm.html" id="item53" media-type="application/xhtml+xml">
+                                                         <!--Chunk: size=51746 Split on div-->
+                                                         <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-49.htm.html" id="item54" media-type="application/xhtml+xml">
+                                                          <!--Chunk: size=58540 Split on div-->
+                                                          <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-50.htm.html" id="item55" media-type="application/xhtml+xml">
+                                                           <!--Chunk: size=66538 Split on div-->
+                                                           <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-51.htm.html" id="item56" media-type="application/xhtml+xml">
+                                                            <!--Chunk: size=53240 Split on div-->
+                                                            <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-52.htm.html" id="item57" media-type="application/xhtml+xml">
+                                                             <!--Chunk: size=54375 Split on div-->
+                                                             <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-53.htm.html" id="item58" media-type="application/xhtml+xml">
+                                                              <!--Chunk: size=54268 Split on div-->
+                                                              <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-54.htm.html" id="item59" media-type="application/xhtml+xml">
+                                                               <!--Chunk: size=54373 Split on div-->
+                                                               <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-55.htm.html" id="item60" media-type="application/xhtml+xml">
+                                                                <!--Chunk: size=58744 Split on div-->
+                                                                <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-56.htm.html" id="item61" media-type="application/xhtml+xml">
+                                                                 <!--Chunk: size=53208 Split on div-->
+                                                                 <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-57.htm.html" id="item62" media-type="application/xhtml+xml">
+                                                                  <!--Chunk: size=53405 Split on div-->
+                                                                  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-58.htm.html" id="item63" media-type="application/xhtml+xml">
+                                                                   <!--Chunk: size=53793 Split on div-->
+                                                                   <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-59.htm.html" id="item64" media-type="application/xhtml+xml">
+                                                                    <!--Chunk: size=54766 Split on div-->
+                                                                    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-60.htm.html" id="item65" media-type="application/xhtml+xml">
+                                                                     <!--Chunk: size=55485 Split on div-->
+                                                                     <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-61.htm.html" id="item66" media-type="application/xhtml+xml">
+                                                                      <!--Chunk: size=51658 Split on div-->
+                                                                      <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-62.htm.html" id="item67" media-type="application/xhtml+xml">
+                                                                       <!--Chunk: size=52806 Split on div-->
+                                                                       <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-63.htm.html" id="item68" media-type="application/xhtml+xml">
+                                                                        <!--Chunk: size=58713 Split on div-->
+                                                                        <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-64.htm.html" id="item69" media-type="application/xhtml+xml">
+                                                                         <!--Chunk: size=57610 Split on div-->
+                                                                         <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-65.htm.html" id="item70" media-type="application/xhtml+xml">
+                                                                          <!--Chunk: size=60847 Split on div-->
+                                                                          <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-66.htm.html" id="item71" media-type="application/xhtml+xml">
+                                                                           <!--Chunk: size=57840 Split on div-->
+                                                                           <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-67.htm.html" id="item72" media-type="application/xhtml+xml">
+                                                                            <!--Chunk: size=68925-->
+                                                                            <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-68.htm.html" id="item73" media-type="application/xhtml+xml">
+                                                                             <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml">
+                                                                              <item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml">
+                                                                              </item>
+                                                                             </item>
+                                                                            </item>
+                                                                           </item>
+                                                                          </item>
+                                                                         </item>
+                                                                        </item>
+                                                                       </item>
+                                                                      </item>
+                                                                     </item>
+                                                                    </item>
+                                                                   </item>
+                                                                  </item>
+                                                                 </item>
+                                                                </item>
+                                                               </item>
+                                                              </item>
+                                                             </item>
+                                                            </item>
+                                                           </item>
+                                                          </item>
+                                                         </item>
+                                                        </item>
+                                                       </item>
+                                                      </item>
+                                                     </item>
+                                                    </item>
+                                                   </item>
+                                                  </item>
+                                                 </item>
+                                                </item>
+                                               </item>
+                                              </item>
+                                             </item>
+                                            </item>
+                                           </item>
+                                          </item>
+                                         </item>
+                                        </item>
+                                       </item>
+                                      </item>
+                                     </item>
+                                    </item>
+                                   </item>
+                                  </item>
+                                 </item>
+                                </item>
+                               </item>
+                              </item>
+                             </item>
+                            </item>
+                           </item>
+                          </item>
+                         </item>
+                        </item>
+                       </item>
+                      </item>
+                     </item>
+                    </item>
+                   </item>
+                  </item>
+                 </item>
+                </item>
+               </item>
+              </item>
+             </item>
+            </item>
+           </item>
+          </item>
+         </item>
+        </item>
+       </item>
+      </item>
+     </item>
+    </item>
+   </manifest>
+   <spine toc="ncx">
+    <itemref idref="coverpage-wrapper" linear="yes">
+     <itemref idref="item5" linear="yes">
+      <itemref idref="item6" linear="yes">
+       <itemref idref="item7" linear="yes">
+        <itemref idref="item8" linear="yes">
+         <itemref idref="item9" linear="yes">
+          <itemref idref="item10" linear="yes">
+           <itemref idref="item11" linear="yes">
+            <itemref idref="item12" linear="yes">
+             <itemref idref="item13" linear="yes">
+              <itemref idref="item14" linear="yes">
+               <itemref idref="item15" linear="yes">
+                <itemref idref="item16" linear="yes">
+                 <itemref idref="item17" linear="yes">
+                  <itemref idref="item18" linear="yes">
+                   <itemref idref="item19" linear="yes">
+                    <itemref idref="item20" linear="yes">
+                     <itemref idref="item21" linear="yes">
+                      <itemref idref="item22" linear="yes">
+                       <itemref idref="item23" linear="yes">
+                        <itemref idref="item24" linear="yes">
+                         <itemref idref="item25" linear="yes">
+                          <itemref idref="item26" linear="yes">
+                           <itemref idref="item27" linear="yes">
+                            <itemref idref="item28" linear="yes">
+                             <itemref idref="item29" linear="yes">
+                              <itemref idref="item30" linear="yes">
+                               <itemref idref="item31" linear="yes">
+                                <itemref idref="item32" linear="yes">
+                                 <itemref idref="item33" linear="yes">
+                                  <itemref idref="item34" linear="yes">
+                                   <itemref idref="item35" linear="yes">
+                                    <itemref idref="item36" linear="yes">
+                                     <itemref idref="item37" linear="yes">
+                                      <itemref idref="item38" linear="yes">
+                                       <itemref idref="item39" linear="yes">
+                                        <itemref idref="item40" linear="yes">
+                                         <itemref idref="item41" linear="yes">
+                                          <itemref idref="item42" linear="yes">
+                                           <itemref idref="item43" linear="yes">
+                                            <itemref idref="item44" linear="yes">
+                                             <itemref idref="item45" linear="yes">
+                                              <itemref idref="item46" linear="yes">
+                                               <itemref idref="item47" linear="yes">
+                                                <itemref idref="item48" linear="yes">
+                                                 <itemref idref="item49" linear="yes">
+                                                  <itemref idref="item50" linear="yes">
+                                                   <itemref idref="item51" linear="yes">
+                                                    <itemref idref="item52" linear="yes">
+                                                     <itemref idref="item53" linear="yes">
+                                                      <itemref idref="item54" linear="yes">
+                                                       <itemref idref="item55" linear="yes">
+                                                        <itemref idref="item56" linear="yes">
+                                                         <itemref idref="item57" linear="yes">
+                                                          <itemref idref="item58" linear="yes">
+                                                           <itemref idref="item59" linear="yes">
+                                                            <itemref idref="item60" linear="yes">
+                                                             <itemref idref="item61" linear="yes">
+                                                              <itemref idref="item62" linear="yes">
+                                                               <itemref idref="item63" linear="yes">
+                                                                <itemref idref="item64" linear="yes">
+                                                                 <itemref idref="item65" linear="yes">
+                                                                  <itemref idref="item66" linear="yes">
+                                                                   <itemref idref="item67" linear="yes">
+                                                                    <itemref idref="item68" linear="yes">
+                                                                     <itemref idref="item69" linear="yes">
+                                                                      <itemref idref="item70" linear="yes">
+                                                                       <itemref idref="item71" linear="yes">
+                                                                        <itemref idref="item72" linear="yes">
+                                                                         <itemref idref="item73" linear="yes">
+                                                                         </itemref>
+                                                                        </itemref>
+                                                                       </itemref>
+                                                                      </itemref>
+                                                                     </itemref>
+                                                                    </itemref>
+                                                                   </itemref>
+                                                                  </itemref>
+                                                                 </itemref>
+                                                                </itemref>
+                                                               </itemref>
+                                                              </itemref>
+                                                             </itemref>
+                                                            </itemref>
+                                                           </itemref>
+                                                          </itemref>
+                                                         </itemref>
+                                                        </itemref>
+                                                       </itemref>
+                                                      </itemref>
+                                                     </itemref>
+                                                    </itemref>
+                                                   </itemref>
+                                                  </itemref>
+                                                 </itemref>
+                                                </itemref>
+                                               </itemref>
+                                              </itemref>
+                                             </itemref>
+                                            </itemref>
+                                           </itemref>
+                                          </itemref>
+                                         </itemref>
+                                        </itemref>
+                                       </itemref>
+                                      </itemref>
+                                     </itemref>
+                                    </itemref>
+                                   </itemref>
+                                  </itemref>
+                                 </itemref>
+                                </itemref>
+                               </itemref>
+                              </itemref>
+                             </itemref>
+                            </itemref>
+                           </itemref>
+                          </itemref>
+                         </itemref>
+                        </itemref>
+                       </itemref>
+                      </itemref>
+                     </itemref>
+                    </itemref>
+                   </itemref>
+                  </itemref>
+                 </itemref>
+                </itemref>
+               </itemref>
+              </itemref>
+             </itemref>
+            </itemref>
+           </itemref>
+          </itemref>
+         </itemref>
+        </itemref>
+       </itemref>
+      </itemref>
+     </itemref>
+    </itemref>
+   </spine>
+   <guide>
+    <reference href="wrap0000.html" title="Cover" type="cover">
+    </reference>
+   </guide>
+  </package>
+ </body>
+</html>
+--------------------------------------------------------------------------------
+Trying to parse your markup with lxml
+Here's what lxml did with the markup:
+<?xml version='1.0' encoding='UTF-8'?>
+<html>
+ <body>
+  <package unique-identifier="id" version="2.0" xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <metadata>
+    <dc:rights>
+     Public domain in the USA.
+    </dc:rights>
+    <dc:identifier id="id" opf:scheme="URI">
+     http://www.gutenberg.org/2600
+    </dc:identifier>
+    <dc:creator opf:file-as="Tolstoy, Leo, graf">
+     graf Leo Tolstoy
+    </dc:creator>
+    <dc:contributor opf:file-as="Maude, Aylmer" opf:role="trl">
+     Aylmer Maude
+    </dc:contributor>
+    <dc:contributor opf:file-as="Maude, Louise" opf:role="trl">
+     Louise Maude
+    </dc:contributor>
+    <dc:title>
+     War and Peace
+    </dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">
+     en
+    </dc:language>
+    <dc:subject>
+     Historical fiction
+    </dc:subject>
+    <dc:subject>
+     War stories
+    </dc:subject>
+    <dc:subject>
+     Napoleonic Wars, 1800-1815 -- Campaigns -- Russia -- Fiction
+    </dc:subject>
+    <dc:subject>
+     Russia -- History -- Alexander I, 1801-1825 -- Fiction
+    </dc:subject>
+    <dc:subject>
+     Aristocracy (Social class) -- Russia -- Fiction
+    </dc:subject>
+    <dc:date opf:event="publication">
+     2001-04-01
+    </dc:date>
+    <dc:date opf:event="conversion">
+     2020-04-02T07:55:23.696736+00:00
+    </dc:date>
+    <dc:source>
+     https://www.gutenberg.org/files/2600/2600-h/2600-h.htm
+    </dc:source>
+    <meta content="item1" name="cover"/>
+   </metadata>
+   <manifest>
+    <!--Image: 484 x 700 size=108909 q=90-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@images@cover.jpg" id="item1" media-type="image/jpeg">
+    </item>
+    <item href="pgepub.css" id="item2" media-type="text/css">
+    </item>
+    <item href="0.css" id="item3" media-type="text/css">
+    </item>
+    <item href="1.css" id="item4" media-type="text/css">
+    </item>
+    <!--Chunk: size=57550 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-0.htm.html" id="item5" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=58304 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-1.htm.html" id="item6" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=52760 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-2.htm.html" id="item7" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=57074 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-3.htm.html" id="item8" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=52377 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-4.htm.html" id="item9" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=70163 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-5.htm.html" id="item10" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=60805 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-6.htm.html" id="item11" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=61815 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-7.htm.html" id="item12" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=51653 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-8.htm.html" id="item13" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=64801 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-9.htm.html" id="item14" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=51852 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-10.htm.html" id="item15" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=70173 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-11.htm.html" id="item16" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=63821 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-12.htm.html" id="item17" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=53220 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-13.htm.html" id="item18" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=51538 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-14.htm.html" id="item19" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=56744 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-15.htm.html" id="item20" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=53690 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-16.htm.html" id="item21" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=58241 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-17.htm.html" id="item22" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=57692 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-18.htm.html" id="item23" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=58285 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-19.htm.html" id="item24" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=57202 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-20.htm.html" id="item25" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=63300 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-21.htm.html" id="item26" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=60258 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-22.htm.html" id="item27" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=55844 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-23.htm.html" id="item28" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54441 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-24.htm.html" id="item29" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54570 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-25.htm.html" id="item30" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=52393 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-26.htm.html" id="item31" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=51987 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-27.htm.html" id="item32" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=67760 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-28.htm.html" id="item33" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=63989 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-29.htm.html" id="item34" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=63702 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-30.htm.html" id="item35" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=59862 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-31.htm.html" id="item36" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54267 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-32.htm.html" id="item37" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=59292 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-33.htm.html" id="item38" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=56661 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-34.htm.html" id="item39" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=60083 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-35.htm.html" id="item40" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=56200 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-36.htm.html" id="item41" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=56136 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-37.htm.html" id="item42" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=59126 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-38.htm.html" id="item43" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=53080 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-39.htm.html" id="item44" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54926 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-40.htm.html" id="item45" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=67086 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-41.htm.html" id="item46" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=57293 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-42.htm.html" id="item47" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54513 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-43.htm.html" id="item48" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=64103 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-44.htm.html" id="item49" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=57653 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-45.htm.html" id="item50" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=55452 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-46.htm.html" id="item51" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=59269 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-47.htm.html" id="item52" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=53393 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-48.htm.html" id="item53" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=51746 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-49.htm.html" id="item54" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=58540 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-50.htm.html" id="item55" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=66538 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-51.htm.html" id="item56" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=53240 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-52.htm.html" id="item57" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54375 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-53.htm.html" id="item58" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54268 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-54.htm.html" id="item59" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54373 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-55.htm.html" id="item60" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=58744 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-56.htm.html" id="item61" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=53208 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-57.htm.html" id="item62" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=53405 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-58.htm.html" id="item63" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=53793 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-59.htm.html" id="item64" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=54766 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-60.htm.html" id="item65" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=55485 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-61.htm.html" id="item66" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=51658 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-62.htm.html" id="item67" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=52806 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-63.htm.html" id="item68" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=58713 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-64.htm.html" id="item69" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=57610 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-65.htm.html" id="item70" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=60847 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-66.htm.html" id="item71" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=57840 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-67.htm.html" id="item72" media-type="application/xhtml+xml">
+    </item>
+    <!--Chunk: size=68925-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-68.htm.html" id="item73" media-type="application/xhtml+xml">
+    </item>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml">
+    </item>
+    <item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml">
+    </item>
+   </manifest>
+   <spine toc="ncx">
+    <itemref idref="coverpage-wrapper" linear="yes">
+    </itemref>
+    <itemref idref="item5" linear="yes">
+    </itemref>
+    <itemref idref="item6" linear="yes">
+    </itemref>
+    <itemref idref="item7" linear="yes">
+    </itemref>
+    <itemref idref="item8" linear="yes">
+    </itemref>
+    <itemref idref="item9" linear="yes">
+    </itemref>
+    <itemref idref="item10" linear="yes">
+    </itemref>
+    <itemref idref="item11" linear="yes">
+    </itemref>
+    <itemref idref="item12" linear="yes">
+    </itemref>
+    <itemref idref="item13" linear="yes">
+    </itemref>
+    <itemref idref="item14" linear="yes">
+    </itemref>
+    <itemref idref="item15" linear="yes">
+    </itemref>
+    <itemref idref="item16" linear="yes">
+    </itemref>
+    <itemref idref="item17" linear="yes">
+    </itemref>
+    <itemref idref="item18" linear="yes">
+    </itemref>
+    <itemref idref="item19" linear="yes">
+    </itemref>
+    <itemref idref="item20" linear="yes">
+    </itemref>
+    <itemref idref="item21" linear="yes">
+    </itemref>
+    <itemref idref="item22" linear="yes">
+    </itemref>
+    <itemref idref="item23" linear="yes">
+    </itemref>
+    <itemref idref="item24" linear="yes">
+    </itemref>
+    <itemref idref="item25" linear="yes">
+    </itemref>
+    <itemref idref="item26" linear="yes">
+    </itemref>
+    <itemref idref="item27" linear="yes">
+    </itemref>
+    <itemref idref="item28" linear="yes">
+    </itemref>
+    <itemref idref="item29" linear="yes">
+    </itemref>
+    <itemref idref="item30" linear="yes">
+    </itemref>
+    <itemref idref="item31" linear="yes">
+    </itemref>
+    <itemref idref="item32" linear="yes">
+    </itemref>
+    <itemref idref="item33" linear="yes">
+    </itemref>
+    <itemref idref="item34" linear="yes">
+    </itemref>
+    <itemref idref="item35" linear="yes">
+    </itemref>
+    <itemref idref="item36" linear="yes">
+    </itemref>
+    <itemref idref="item37" linear="yes">
+    </itemref>
+    <itemref idref="item38" linear="yes">
+    </itemref>
+    <itemref idref="item39" linear="yes">
+    </itemref>
+    <itemref idref="item40" linear="yes">
+    </itemref>
+    <itemref idref="item41" linear="yes">
+    </itemref>
+    <itemref idref="item42" linear="yes">
+    </itemref>
+    <itemref idref="item43" linear="yes">
+    </itemref>
+    <itemref idref="item44" linear="yes">
+    </itemref>
+    <itemref idref="item45" linear="yes">
+    </itemref>
+    <itemref idref="item46" linear="yes">
+    </itemref>
+    <itemref idref="item47" linear="yes">
+    </itemref>
+    <itemref idref="item48" linear="yes">
+    </itemref>
+    <itemref idref="item49" linear="yes">
+    </itemref>
+    <itemref idref="item50" linear="yes">
+    </itemref>
+    <itemref idref="item51" linear="yes">
+    </itemref>
+    <itemref idref="item52" linear="yes">
+    </itemref>
+    <itemref idref="item53" linear="yes">
+    </itemref>
+    <itemref idref="item54" linear="yes">
+    </itemref>
+    <itemref idref="item55" linear="yes">
+    </itemref>
+    <itemref idref="item56" linear="yes">
+    </itemref>
+    <itemref idref="item57" linear="yes">
+    </itemref>
+    <itemref idref="item58" linear="yes">
+    </itemref>
+    <itemref idref="item59" linear="yes">
+    </itemref>
+    <itemref idref="item60" linear="yes">
+    </itemref>
+    <itemref idref="item61" linear="yes">
+    </itemref>
+    <itemref idref="item62" linear="yes">
+    </itemref>
+    <itemref idref="item63" linear="yes">
+    </itemref>
+    <itemref idref="item64" linear="yes">
+    </itemref>
+    <itemref idref="item65" linear="yes">
+    </itemref>
+    <itemref idref="item66" linear="yes">
+    </itemref>
+    <itemref idref="item67" linear="yes">
+    </itemref>
+    <itemref idref="item68" linear="yes">
+    </itemref>
+    <itemref idref="item69" linear="yes">
+    </itemref>
+    <itemref idref="item70" linear="yes">
+    </itemref>
+    <itemref idref="item71" linear="yes">
+    </itemref>
+    <itemref idref="item72" linear="yes">
+    </itemref>
+    <itemref idref="item73" linear="yes">
+    </itemref>
+   </spine>
+   <guide>
+    <reference href="wrap0000.html" title="Cover" type="cover">
+    </reference>
+   </guide>
+  </package>
+ </body>
+</html>
+--------------------------------------------------------------------------------
+Trying to parse your markup with lxml-xml
+Here's what lxml-xml did with the markup:
+<?xml version="1.0" encoding="utf-8"?>
+<package unique-identifier="id" version="2.0" xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <metadata>
+  <dc:rights>
+   Public domain in the USA.
+  </dc:rights>
+  <dc:identifier id="id" scheme="URI">
+   http://www.gutenberg.org/2600
+  </dc:identifier>
+  <dc:creator file-as="Tolstoy, Leo, graf">
+   graf Leo Tolstoy
+  </dc:creator>
+  <dc:contributor file-as="Maude, Aylmer" role="trl">
+   Aylmer Maude
+  </dc:contributor>
+  <dc:contributor file-as="Maude, Louise" role="trl">
+   Louise Maude
+  </dc:contributor>
+  <dc:title>
+   War and Peace
+  </dc:title>
+  <dc:language xsi:type="dcterms:RFC4646">
+   en
+  </dc:language>
+  <dc:subject>
+   Historical fiction
+  </dc:subject>
+  <dc:subject>
+   War stories
+  </dc:subject>
+  <dc:subject>
+   Napoleonic Wars, 1800-1815 -- Campaigns -- Russia -- Fiction
+  </dc:subject>
+  <dc:subject>
+   Russia -- History -- Alexander I, 1801-1825 -- Fiction
+  </dc:subject>
+  <dc:subject>
+   Aristocracy (Social class) -- Russia -- Fiction
+  </dc:subject>
+  <dc:date event="publication">
+   2001-04-01
+  </dc:date>
+  <dc:date event="conversion">
+   2020-04-02T07:55:23.696736+00:00
+  </dc:date>
+  <dc:source>
+   https://www.gutenberg.org/files/2600/2600-h/2600-h.htm
+  </dc:source>
+  <meta content="item1" name="cover"/>
+ </metadata>
+ <manifest>
+  <!--Image: 484 x 700 size=108909 q=90-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@images@cover.jpg" id="item1" media-type="image/jpeg"/>
+  <item href="pgepub.css" id="item2" media-type="text/css"/>
+  <item href="0.css" id="item3" media-type="text/css"/>
+  <item href="1.css" id="item4" media-type="text/css"/>
+  <!--Chunk: size=57550 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-0.htm.html" id="item5" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=58304 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-1.htm.html" id="item6" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=52760 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-2.htm.html" id="item7" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=57074 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-3.htm.html" id="item8" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=52377 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-4.htm.html" id="item9" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=70163 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-5.htm.html" id="item10" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=60805 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-6.htm.html" id="item11" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=61815 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-7.htm.html" id="item12" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=51653 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-8.htm.html" id="item13" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=64801 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-9.htm.html" id="item14" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=51852 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-10.htm.html" id="item15" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=70173 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-11.htm.html" id="item16" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=63821 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-12.htm.html" id="item17" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=53220 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-13.htm.html" id="item18" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=51538 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-14.htm.html" id="item19" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=56744 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-15.htm.html" id="item20" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=53690 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-16.htm.html" id="item21" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=58241 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-17.htm.html" id="item22" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=57692 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-18.htm.html" id="item23" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=58285 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-19.htm.html" id="item24" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=57202 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-20.htm.html" id="item25" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=63300 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-21.htm.html" id="item26" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=60258 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-22.htm.html" id="item27" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=55844 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-23.htm.html" id="item28" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54441 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-24.htm.html" id="item29" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54570 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-25.htm.html" id="item30" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=52393 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-26.htm.html" id="item31" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=51987 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-27.htm.html" id="item32" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=67760 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-28.htm.html" id="item33" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=63989 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-29.htm.html" id="item34" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=63702 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-30.htm.html" id="item35" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=59862 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-31.htm.html" id="item36" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54267 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-32.htm.html" id="item37" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=59292 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-33.htm.html" id="item38" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=56661 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-34.htm.html" id="item39" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=60083 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-35.htm.html" id="item40" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=56200 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-36.htm.html" id="item41" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=56136 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-37.htm.html" id="item42" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=59126 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-38.htm.html" id="item43" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=53080 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-39.htm.html" id="item44" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54926 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-40.htm.html" id="item45" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=67086 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-41.htm.html" id="item46" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=57293 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-42.htm.html" id="item47" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54513 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-43.htm.html" id="item48" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=64103 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-44.htm.html" id="item49" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=57653 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-45.htm.html" id="item50" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=55452 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-46.htm.html" id="item51" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=59269 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-47.htm.html" id="item52" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=53393 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-48.htm.html" id="item53" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=51746 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-49.htm.html" id="item54" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=58540 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-50.htm.html" id="item55" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=66538 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-51.htm.html" id="item56" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=53240 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-52.htm.html" id="item57" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54375 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-53.htm.html" id="item58" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54268 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-54.htm.html" id="item59" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54373 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-55.htm.html" id="item60" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=58744 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-56.htm.html" id="item61" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=53208 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-57.htm.html" id="item62" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=53405 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-58.htm.html" id="item63" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=53793 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-59.htm.html" id="item64" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=54766 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-60.htm.html" id="item65" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=55485 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-61.htm.html" id="item66" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=51658 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-62.htm.html" id="item67" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=52806 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-63.htm.html" id="item68" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=58713 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-64.htm.html" id="item69" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=57610 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-65.htm.html" id="item70" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=60847 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-66.htm.html" id="item71" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=57840 Split on div-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-67.htm.html" id="item72" media-type="application/xhtml+xml"/>
+  <!--Chunk: size=68925-->
+  <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-68.htm.html" id="item73" media-type="application/xhtml+xml"/>
+  <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+  <item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml"/>
+ </manifest>
+ <spine toc="ncx">
+  <itemref idref="coverpage-wrapper" linear="yes"/>
+  <itemref idref="item5" linear="yes"/>
+  <itemref idref="item6" linear="yes"/>
+  <itemref idref="item7" linear="yes"/>
+  <itemref idref="item8" linear="yes"/>
+  <itemref idref="item9" linear="yes"/>
+  <itemref idref="item10" linear="yes"/>
+  <itemref idref="item11" linear="yes"/>
+  <itemref idref="item12" linear="yes"/>
+  <itemref idref="item13" linear="yes"/>
+  <itemref idref="item14" linear="yes"/>
+  <itemref idref="item15" linear="yes"/>
+  <itemref idref="item16" linear="yes"/>
+  <itemref idref="item17" linear="yes"/>
+  <itemref idref="item18" linear="yes"/>
+  <itemref idref="item19" linear="yes"/>
+  <itemref idref="item20" linear="yes"/>
+  <itemref idref="item21" linear="yes"/>
+  <itemref idref="item22" linear="yes"/>
+  <itemref idref="item23" linear="yes"/>
+  <itemref idref="item24" linear="yes"/>
+  <itemref idref="item25" linear="yes"/>
+  <itemref idref="item26" linear="yes"/>
+  <itemref idref="item27" linear="yes"/>
+  <itemref idref="item28" linear="yes"/>
+  <itemref idref="item29" linear="yes"/>
+  <itemref idref="item30" linear="yes"/>
+  <itemref idref="item31" linear="yes"/>
+  <itemref idref="item32" linear="yes"/>
+  <itemref idref="item33" linear="yes"/>
+  <itemref idref="item34" linear="yes"/>
+  <itemref idref="item35" linear="yes"/>
+  <itemref idref="item36" linear="yes"/>
+  <itemref idref="item37" linear="yes"/>
+  <itemref idref="item38" linear="yes"/>
+  <itemref idref="item39" linear="yes"/>
+  <itemref idref="item40" linear="yes"/>
+  <itemref idref="item41" linear="yes"/>
+  <itemref idref="item42" linear="yes"/>
+  <itemref idref="item43" linear="yes"/>
+  <itemref idref="item44" linear="yes"/>
+  <itemref idref="item45" linear="yes"/>
+  <itemref idref="item46" linear="yes"/>
+  <itemref idref="item47" linear="yes"/>
+  <itemref idref="item48" linear="yes"/>
+  <itemref idref="item49" linear="yes"/>
+  <itemref idref="item50" linear="yes"/>
+  <itemref idref="item51" linear="yes"/>
+  <itemref idref="item52" linear="yes"/>
+  <itemref idref="item53" linear="yes"/>
+  <itemref idref="item54" linear="yes"/>
+  <itemref idref="item55" linear="yes"/>
+  <itemref idref="item56" linear="yes"/>
+  <itemref idref="item57" linear="yes"/>
+  <itemref idref="item58" linear="yes"/>
+  <itemref idref="item59" linear="yes"/>
+  <itemref idref="item60" linear="yes"/>
+  <itemref idref="item61" linear="yes"/>
+  <itemref idref="item62" linear="yes"/>
+  <itemref idref="item63" linear="yes"/>
+  <itemref idref="item64" linear="yes"/>
+  <itemref idref="item65" linear="yes"/>
+  <itemref idref="item66" linear="yes"/>
+  <itemref idref="item67" linear="yes"/>
+  <itemref idref="item68" linear="yes"/>
+  <itemref idref="item69" linear="yes"/>
+  <itemref idref="item70" linear="yes"/>
+  <itemref idref="item71" linear="yes"/>
+  <itemref idref="item72" linear="yes"/>
+  <itemref idref="item73" linear="yes"/>
+ </spine>
+ <guide>
+  <reference href="wrap0000.html" title="Cover" type="cover"/>
+ </guide>
+</package>
+--------------------------------------------------------------------------------
+<?xml version="1.0" encoding="utf-8"?>
+<package unique-identifier="id" version="2.0" xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<metadata>
+<dc:rights>Public domain in the USA.</dc:rights>
+<dc:identifier id="id" scheme="URI">http://www.gutenberg.org/2600</dc:identifier>
+<dc:creator file-as="Tolstoy, Leo, graf">graf Leo Tolstoy</dc:creator>
+<dc:contributor file-as="Maude, Aylmer" role="trl">Aylmer Maude</dc:contributor>
+<dc:contributor file-as="Maude, Louise" role="trl">Louise Maude</dc:contributor>
+<dc:title>War and Peace</dc:title>
+<dc:language xsi:type="dcterms:RFC4646">en</dc:language>
+<dc:subject>Historical fiction</dc:subject>
+<dc:subject>War stories</dc:subject>
+<dc:subject>Napoleonic Wars, 1800-1815 -- Campaigns -- Russia -- Fiction</dc:subject>
+<dc:subject>Russia -- History -- Alexander I, 1801-1825 -- Fiction</dc:subject>
+<dc:subject>Aristocracy (Social class) -- Russia -- Fiction</dc:subject>
+<dc:date event="publication">2001-04-01</dc:date>
+<dc:date event="conversion">2020-04-02T07:55:23.696736+00:00</dc:date>
+<dc:source>https://www.gutenberg.org/files/2600/2600-h/2600-h.htm</dc:source>
+<meta content="item1" name="cover"/>
+</metadata>
+<manifest>
+<!--Image: 484 x 700 size=108909 q=90-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@images@cover.jpg" id="item1" media-type="image/jpeg"/>
+<item href="pgepub.css" id="item2" media-type="text/css"/>
+<item href="0.css" id="item3" media-type="text/css"/>
+<item href="1.css" id="item4" media-type="text/css"/>
+<!--Chunk: size=57550 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-0.htm.html" id="item5" media-type="application/xhtml+xml"/>
+<!--Chunk: size=58304 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-1.htm.html" id="item6" media-type="application/xhtml+xml"/>
+<!--Chunk: size=52760 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-2.htm.html" id="item7" media-type="application/xhtml+xml"/>
+<!--Chunk: size=57074 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-3.htm.html" id="item8" media-type="application/xhtml+xml"/>
+<!--Chunk: size=52377 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-4.htm.html" id="item9" media-type="application/xhtml+xml"/>
+<!--Chunk: size=70163 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-5.htm.html" id="item10" media-type="application/xhtml+xml"/>
+<!--Chunk: size=60805 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-6.htm.html" id="item11" media-type="application/xhtml+xml"/>
+<!--Chunk: size=61815 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-7.htm.html" id="item12" media-type="application/xhtml+xml"/>
+<!--Chunk: size=51653 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-8.htm.html" id="item13" media-type="application/xhtml+xml"/>
+<!--Chunk: size=64801 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-9.htm.html" id="item14" media-type="application/xhtml+xml"/>
+<!--Chunk: size=51852 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-10.htm.html" id="item15" media-type="application/xhtml+xml"/>
+<!--Chunk: size=70173 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-11.htm.html" id="item16" media-type="application/xhtml+xml"/>
+<!--Chunk: size=63821 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-12.htm.html" id="item17" media-type="application/xhtml+xml"/>
+<!--Chunk: size=53220 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-13.htm.html" id="item18" media-type="application/xhtml+xml"/>
+<!--Chunk: size=51538 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-14.htm.html" id="item19" media-type="application/xhtml+xml"/>
+<!--Chunk: size=56744 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-15.htm.html" id="item20" media-type="application/xhtml+xml"/>
+<!--Chunk: size=53690 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-16.htm.html" id="item21" media-type="application/xhtml+xml"/>
+<!--Chunk: size=58241 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-17.htm.html" id="item22" media-type="application/xhtml+xml"/>
+<!--Chunk: size=57692 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-18.htm.html" id="item23" media-type="application/xhtml+xml"/>
+<!--Chunk: size=58285 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-19.htm.html" id="item24" media-type="application/xhtml+xml"/>
+<!--Chunk: size=57202 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-20.htm.html" id="item25" media-type="application/xhtml+xml"/>
+<!--Chunk: size=63300 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-21.htm.html" id="item26" media-type="application/xhtml+xml"/>
+<!--Chunk: size=60258 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-22.htm.html" id="item27" media-type="application/xhtml+xml"/>
+<!--Chunk: size=55844 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-23.htm.html" id="item28" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54441 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-24.htm.html" id="item29" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54570 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-25.htm.html" id="item30" media-type="application/xhtml+xml"/>
+<!--Chunk: size=52393 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-26.htm.html" id="item31" media-type="application/xhtml+xml"/>
+<!--Chunk: size=51987 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-27.htm.html" id="item32" media-type="application/xhtml+xml"/>
+<!--Chunk: size=67760 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-28.htm.html" id="item33" media-type="application/xhtml+xml"/>
+<!--Chunk: size=63989 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-29.htm.html" id="item34" media-type="application/xhtml+xml"/>
+<!--Chunk: size=63702 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-30.htm.html" id="item35" media-type="application/xhtml+xml"/>
+<!--Chunk: size=59862 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-31.htm.html" id="item36" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54267 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-32.htm.html" id="item37" media-type="application/xhtml+xml"/>
+<!--Chunk: size=59292 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-33.htm.html" id="item38" media-type="application/xhtml+xml"/>
+<!--Chunk: size=56661 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-34.htm.html" id="item39" media-type="application/xhtml+xml"/>
+<!--Chunk: size=60083 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-35.htm.html" id="item40" media-type="application/xhtml+xml"/>
+<!--Chunk: size=56200 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-36.htm.html" id="item41" media-type="application/xhtml+xml"/>
+<!--Chunk: size=56136 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-37.htm.html" id="item42" media-type="application/xhtml+xml"/>
+<!--Chunk: size=59126 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-38.htm.html" id="item43" media-type="application/xhtml+xml"/>
+<!--Chunk: size=53080 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-39.htm.html" id="item44" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54926 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-40.htm.html" id="item45" media-type="application/xhtml+xml"/>
+<!--Chunk: size=67086 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-41.htm.html" id="item46" media-type="application/xhtml+xml"/>
+<!--Chunk: size=57293 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-42.htm.html" id="item47" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54513 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-43.htm.html" id="item48" media-type="application/xhtml+xml"/>
+<!--Chunk: size=64103 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-44.htm.html" id="item49" media-type="application/xhtml+xml"/>
+<!--Chunk: size=57653 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-45.htm.html" id="item50" media-type="application/xhtml+xml"/>
+<!--Chunk: size=55452 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-46.htm.html" id="item51" media-type="application/xhtml+xml"/>
+<!--Chunk: size=59269 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-47.htm.html" id="item52" media-type="application/xhtml+xml"/>
+<!--Chunk: size=53393 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-48.htm.html" id="item53" media-type="application/xhtml+xml"/>
+<!--Chunk: size=51746 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-49.htm.html" id="item54" media-type="application/xhtml+xml"/>
+<!--Chunk: size=58540 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-50.htm.html" id="item55" media-type="application/xhtml+xml"/>
+<!--Chunk: size=66538 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-51.htm.html" id="item56" media-type="application/xhtml+xml"/>
+<!--Chunk: size=53240 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-52.htm.html" id="item57" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54375 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-53.htm.html" id="item58" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54268 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-54.htm.html" id="item59" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54373 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-55.htm.html" id="item60" media-type="application/xhtml+xml"/>
+<!--Chunk: size=58744 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-56.htm.html" id="item61" media-type="application/xhtml+xml"/>
+<!--Chunk: size=53208 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-57.htm.html" id="item62" media-type="application/xhtml+xml"/>
+<!--Chunk: size=53405 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-58.htm.html" id="item63" media-type="application/xhtml+xml"/>
+<!--Chunk: size=53793 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-59.htm.html" id="item64" media-type="application/xhtml+xml"/>
+<!--Chunk: size=54766 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-60.htm.html" id="item65" media-type="application/xhtml+xml"/>
+<!--Chunk: size=55485 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-61.htm.html" id="item66" media-type="application/xhtml+xml"/>
+<!--Chunk: size=51658 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-62.htm.html" id="item67" media-type="application/xhtml+xml"/>
+<!--Chunk: size=52806 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-63.htm.html" id="item68" media-type="application/xhtml+xml"/>
+<!--Chunk: size=58713 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-64.htm.html" id="item69" media-type="application/xhtml+xml"/>
+<!--Chunk: size=57610 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-65.htm.html" id="item70" media-type="application/xhtml+xml"/>
+<!--Chunk: size=60847 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-66.htm.html" id="item71" media-type="application/xhtml+xml"/>
+<!--Chunk: size=57840 Split on div-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-67.htm.html" id="item72" media-type="application/xhtml+xml"/>
+<!--Chunk: size=68925-->
+<item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-68.htm.html" id="item73" media-type="application/xhtml+xml"/>
+<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+<item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="coverpage-wrapper" linear="yes"/>
+<itemref idref="item5" linear="yes"/>
+<itemref idref="item6" linear="yes"/>
+<itemref idref="item7" linear="yes"/>
+<itemref idref="item8" linear="yes"/>
+<itemref idref="item9" linear="yes"/>
+<itemref idref="item10" linear="yes"/>
+<itemref idref="item11" linear="yes"/>
+<itemref idref="item12" linear="yes"/>
+<itemref idref="item13" linear="yes"/>
+<itemref idref="item14" linear="yes"/>
+<itemref idref="item15" linear="yes"/>
+<itemref idref="item16" linear="yes"/>
+<itemref idref="item17" linear="yes"/>
+<itemref idref="item18" linear="yes"/>
+<itemref idref="item19" linear="yes"/>
+<itemref idref="item20" linear="yes"/>
+<itemref idref="item21" linear="yes"/>
+<itemref idref="item22" linear="yes"/>
+<itemref idref="item23" linear="yes"/>
+<itemref idref="item24" linear="yes"/>
+<itemref idref="item25" linear="yes"/>
+<itemref idref="item26" linear="yes"/>
+<itemref idref="item27" linear="yes"/>
+<itemref idref="item28" linear="yes"/>
+<itemref idref="item29" linear="yes"/>
+<itemref idref="item30" linear="yes"/>
+<itemref idref="item31" linear="yes"/>
+<itemref idref="item32" linear="yes"/>
+<itemref idref="item33" linear="yes"/>
+<itemref idref="item34" linear="yes"/>
+<itemref idref="item35" linear="yes"/>
+<itemref idref="item36" linear="yes"/>
+<itemref idref="item37" linear="yes"/>
+<itemref idref="item38" linear="yes"/>
+<itemref idref="item39" linear="yes"/>
+<itemref idref="item40" linear="yes"/>
+<itemref idref="item41" linear="yes"/>
+<itemref idref="item42" linear="yes"/>
+<itemref idref="item43" linear="yes"/>
+<itemref idref="item44" linear="yes"/>
+<itemref idref="item45" linear="yes"/>
+<itemref idref="item46" linear="yes"/>
+<itemref idref="item47" linear="yes"/>
+<itemref idref="item48" linear="yes"/>
+<itemref idref="item49" linear="yes"/>
+<itemref idref="item50" linear="yes"/>
+<itemref idref="item51" linear="yes"/>
+<itemref idref="item52" linear="yes"/>
+<itemref idref="item53" linear="yes"/>
+<itemref idref="item54" linear="yes"/>
+<itemref idref="item55" linear="yes"/>
+<itemref idref="item56" linear="yes"/>
+<itemref idref="item57" linear="yes"/>
+<itemref idref="item58" linear="yes"/>
+<itemref idref="item59" linear="yes"/>
+<itemref idref="item60" linear="yes"/>
+<itemref idref="item61" linear="yes"/>
+<itemref idref="item62" linear="yes"/>
+<itemref idref="item63" linear="yes"/>
+<itemref idref="item64" linear="yes"/>
+<itemref idref="item65" linear="yes"/>
+<itemref idref="item66" linear="yes"/>
+<itemref idref="item67" linear="yes"/>
+<itemref idref="item68" linear="yes"/>
+<itemref idref="item69" linear="yes"/>
+<itemref idref="item70" linear="yes"/>
+<itemref idref="item71" linear="yes"/>
+<itemref idref="item72" linear="yes"/>
+<itemref idref="item73" linear="yes"/>
+</spine>
+<guide>
+<reference href="wrap0000.html" title="Cover" type="cover"/>
+</guide>
+</package>
+Etree version of parse
+==============================================================================
+<package xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="id">
+  <metadata>
+    <dc:rights>Public domain in the USA.</dc:rights>
+    <dc:identifier opf:scheme="URI" id="id">http://www.gutenberg.org/2600</dc:identifier>
+    <dc:creator opf:file-as="Tolstoy, Leo, graf">graf Leo Tolstoy</dc:creator>
+    <dc:contributor opf:role="trl" opf:file-as="Maude, Aylmer">Aylmer Maude</dc:contributor>
+    <dc:contributor opf:role="trl" opf:file-as="Maude, Louise">Louise Maude</dc:contributor>
+    <dc:title>War and Peace</dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">en</dc:language>
+    <dc:subject>Historical fiction</dc:subject>
+    <dc:subject>War stories</dc:subject>
+    <dc:subject>Napoleonic Wars, 1800-1815 -- Campaigns -- Russia -- Fiction</dc:subject>
+    <dc:subject>Russia -- History -- Alexander I, 1801-1825 -- Fiction</dc:subject>
+    <dc:subject>Aristocracy (Social class) -- Russia -- Fiction</dc:subject>
+    <dc:date opf:event="publication">2001-04-01</dc:date>
+    <dc:date opf:event="conversion">2020-04-02T07:55:23.696736+00:00</dc:date>
+    <dc:source>https://www.gutenberg.org/files/2600/2600-h/2600-h.htm</dc:source>
+    <meta name="cover" content="item1"/>
+  </metadata>
+  <manifest>
+    <!--Image: 484 x 700 size=108909 q=90-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@images@cover.jpg" id="item1" media-type="image/jpeg"/>
+    <item href="pgepub.css" id="item2" media-type="text/css"/>
+    <item href="0.css" id="item3" media-type="text/css"/>
+    <item href="1.css" id="item4" media-type="text/css"/>
+    <!--Chunk: size=57550 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-0.htm.html" id="item5" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=58304 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-1.htm.html" id="item6" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=52760 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-2.htm.html" id="item7" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=57074 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-3.htm.html" id="item8" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=52377 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-4.htm.html" id="item9" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=70163 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-5.htm.html" id="item10" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=60805 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-6.htm.html" id="item11" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=61815 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-7.htm.html" id="item12" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=51653 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-8.htm.html" id="item13" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=64801 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-9.htm.html" id="item14" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=51852 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-10.htm.html" id="item15" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=70173 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-11.htm.html" id="item16" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=63821 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-12.htm.html" id="item17" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=53220 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-13.htm.html" id="item18" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=51538 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-14.htm.html" id="item19" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=56744 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-15.htm.html" id="item20" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=53690 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-16.htm.html" id="item21" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=58241 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-17.htm.html" id="item22" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=57692 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-18.htm.html" id="item23" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=58285 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-19.htm.html" id="item24" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=57202 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-20.htm.html" id="item25" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=63300 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-21.htm.html" id="item26" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=60258 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-22.htm.html" id="item27" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=55844 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-23.htm.html" id="item28" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54441 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-24.htm.html" id="item29" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54570 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-25.htm.html" id="item30" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=52393 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-26.htm.html" id="item31" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=51987 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-27.htm.html" id="item32" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=67760 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-28.htm.html" id="item33" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=63989 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-29.htm.html" id="item34" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=63702 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-30.htm.html" id="item35" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=59862 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-31.htm.html" id="item36" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54267 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-32.htm.html" id="item37" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=59292 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-33.htm.html" id="item38" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=56661 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-34.htm.html" id="item39" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=60083 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-35.htm.html" id="item40" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=56200 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-36.htm.html" id="item41" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=56136 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-37.htm.html" id="item42" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=59126 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-38.htm.html" id="item43" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=53080 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-39.htm.html" id="item44" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54926 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-40.htm.html" id="item45" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=67086 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-41.htm.html" id="item46" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=57293 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-42.htm.html" id="item47" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54513 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-43.htm.html" id="item48" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=64103 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-44.htm.html" id="item49" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=57653 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-45.htm.html" id="item50" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=55452 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-46.htm.html" id="item51" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=59269 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-47.htm.html" id="item52" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=53393 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-48.htm.html" id="item53" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=51746 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-49.htm.html" id="item54" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=58540 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-50.htm.html" id="item55" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=66538 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-51.htm.html" id="item56" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=53240 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-52.htm.html" id="item57" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54375 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-53.htm.html" id="item58" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54268 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-54.htm.html" id="item59" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54373 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-55.htm.html" id="item60" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=58744 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-56.htm.html" id="item61" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=53208 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-57.htm.html" id="item62" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=53405 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-58.htm.html" id="item63" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=53793 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-59.htm.html" id="item64" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54766 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-60.htm.html" id="item65" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=55485 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-61.htm.html" id="item66" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=51658 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-62.htm.html" id="item67" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=52806 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-63.htm.html" id="item68" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=58713 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-64.htm.html" id="item69" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=57610 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-65.htm.html" id="item70" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=60847 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-66.htm.html" id="item71" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=57840 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-67.htm.html" id="item72" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=68925-->
+    <item href="@public@vhost@g@gutenberg@html@files@2600@2600-h@2600-h-68.htm.html" id="item73" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="coverpage-wrapper" linear="yes"/>
+    <itemref idref="item5" linear="yes"/>
+    <itemref idref="item6" linear="yes"/>
+    <itemref idref="item7" linear="yes"/>
+    <itemref idref="item8" linear="yes"/>
+    <itemref idref="item9" linear="yes"/>
+    <itemref idref="item10" linear="yes"/>
+    <itemref idref="item11" linear="yes"/>
+    <itemref idref="item12" linear="yes"/>
+    <itemref idref="item13" linear="yes"/>
+    <itemref idref="item14" linear="yes"/>
+    <itemref idref="item15" linear="yes"/>
+    <itemref idref="item16" linear="yes"/>
+    <itemref idref="item17" linear="yes"/>
+    <itemref idref="item18" linear="yes"/>
+    <itemref idref="item19" linear="yes"/>
+    <itemref idref="item20" linear="yes"/>
+    <itemref idref="item21" linear="yes"/>
+    <itemref idref="item22" linear="yes"/>
+    <itemref idref="item23" linear="yes"/>
+    <itemref idref="item24" linear="yes"/>
+    <itemref idref="item25" linear="yes"/>
+    <itemref idref="item26" linear="yes"/>
+    <itemref idref="item27" linear="yes"/>
+    <itemref idref="item28" linear="yes"/>
+    <itemref idref="item29" linear="yes"/>
+    <itemref idref="item30" linear="yes"/>
+    <itemref idref="item31" linear="yes"/>
+    <itemref idref="item32" linear="yes"/>
+    <itemref idref="item33" linear="yes"/>
+    <itemref idref="item34" linear="yes"/>
+    <itemref idref="item35" linear="yes"/>
+    <itemref idref="item36" linear="yes"/>
+    <itemref idref="item37" linear="yes"/>
+    <itemref idref="item38" linear="yes"/>
+    <itemref idref="item39" linear="yes"/>
+    <itemref idref="item40" linear="yes"/>
+    <itemref idref="item41" linear="yes"/>
+    <itemref idref="item42" linear="yes"/>
+    <itemref idref="item43" linear="yes"/>
+    <itemref idref="item44" linear="yes"/>
+    <itemref idref="item45" linear="yes"/>
+    <itemref idref="item46" linear="yes"/>
+    <itemref idref="item47" linear="yes"/>
+    <itemref idref="item48" linear="yes"/>
+    <itemref idref="item49" linear="yes"/>
+    <itemref idref="item50" linear="yes"/>
+    <itemref idref="item51" linear="yes"/>
+    <itemref idref="item52" linear="yes"/>
+    <itemref idref="item53" linear="yes"/>
+    <itemref idref="item54" linear="yes"/>
+    <itemref idref="item55" linear="yes"/>
+    <itemref idref="item56" linear="yes"/>
+    <itemref idref="item57" linear="yes"/>
+    <itemref idref="item58" linear="yes"/>
+    <itemref idref="item59" linear="yes"/>
+    <itemref idref="item60" linear="yes"/>
+    <itemref idref="item61" linear="yes"/>
+    <itemref idref="item62" linear="yes"/>
+    <itemref idref="item63" linear="yes"/>
+    <itemref idref="item64" linear="yes"/>
+    <itemref idref="item65" linear="yes"/>
+    <itemref idref="item66" linear="yes"/>
+    <itemref idref="item67" linear="yes"/>
+    <itemref idref="item68" linear="yes"/>
+    <itemref idref="item69" linear="yes"/>
+    <itemref idref="item70" linear="yes"/>
+    <itemref idref="item71" linear="yes"/>
+    <itemref idref="item72" linear="yes"/>
+    <itemref idref="item73" linear="yes"/>
+  </spine>
+  <guide>
+    <reference type="cover" title="Cover" href="wrap0000.html"/>
+  </guide>
+</package>
+

@@ -2,11 +2,11 @@ import os
 import sys
 sys.path.insert(1, './modules')
 
-import discord
+from imports import discord
 import modules.keep_alive as keep_alive
 from googlesearch import search
 from discord.ext import commands
-from discord_slash import SlashCommand
+from imports.discord_slash import SlashCommand
 
 
 
@@ -21,7 +21,6 @@ cogs = [
     'music',
     'slashcog',
     'coglur',
-    'serveronly'
 ]
 
 

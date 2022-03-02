@@ -10,13 +10,14 @@ class ServerOnly(Cog):
     
     __slots__ = ('bot')
 
-    def __init__(self, bot):
+    def __init__(self, bot:Bot):
         self.bot = bot
 
     @Cog.listener()
     async def on_message(self,ctx:Context):
         if ctx.channel.id == 943503892656816198:
             emoji = []
+            ctx.delete()
             for _ in ctx.message.lower():
                 if _.isdecimal():
                     emoji.append(f':{nemoji.get(_)}:')

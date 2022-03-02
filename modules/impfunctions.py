@@ -1,6 +1,5 @@
 import random
 import requests
-import requests as req
 from imports import discord
 from imports.bs4 import BeautifulSoup
 from cryptography.fernet import Fernet
@@ -129,7 +128,7 @@ def decrypt(token: str, key: str):
 
 
 def Getyt(url: str):
-    r = req.get(url, "html.parser")
+    r = requests.get(url, "html.parser")
 
     soup = BeautifulSoup(r.text, "html.parser")
     vidtitle = str(soup.find("title").text)

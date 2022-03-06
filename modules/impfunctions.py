@@ -1,7 +1,7 @@
 import random
-import imports.requests as requests
-from imports import discord
-from imports.bs4 import BeautifulSoup
+import requests
+import discord
+from bs4 import BeautifulSoup
 from cryptography.fernet import Fernet
 
 DOGAPI = "http://thedogapi.com/api/images/get.php"

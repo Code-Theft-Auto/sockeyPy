@@ -2,11 +2,11 @@ import os
 import sys
 sys.path.insert(1, './modules')
 
-from imports import discord
-import modules.keep_alive as keep_alive
+import discord
+import keep_alive
 from googlesearch import search
-from imports.discord.ext import commands
-from imports.discord_slash import SlashCommand
+from discord.ext import commands
+from discord_slash import SlashCommand
 
 
 
@@ -38,4 +38,4 @@ for file in cogs:
 
 TOKEN = str(os.getenv('TOKEN'))
 #keep_alive.keep_alive()
-bot.run(TOKEN)  # client login
+bot.run(TOKEN or input("enter token: "))  # client login

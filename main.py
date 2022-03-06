@@ -16,6 +16,7 @@ slash = SlashCommand(bot,
                      sync_on_cog_reload=True,
                      application_id=916685474364534805)
 beats_activity = [discord.ActivityType.listening, "Beats"]
+
 cogs = [
     'general',
     'music',
@@ -36,6 +37,6 @@ for file in cogs:
     bot.load_extension(f'cogs.{file}')
 
 
-TOKEN = str(os.getenv('TOKEN'))
+TOKEN = str(os.getenv('TOKEN')) or input('enter token: ')
 #keep_alive.keep_alive()
-bot.run(TOKEN or input("enter token: "))  # client login
+bot.run(TOKEN)  # client login

@@ -23,7 +23,6 @@ You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u wan
 ![help menu](https://user-images.githubusercontent.com/78902540/153714982-5e7296f7-30a0-44fa-ab9a-6a17d88db499.png)
 
 
-
+#### New updates comming soon....
 ******
 **Bot made by** *`b5a862f475b9e4fb7e241a32470dbd07#3365`*
-# this project is no longer maintained :( maybe later

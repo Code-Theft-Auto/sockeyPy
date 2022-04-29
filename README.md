@@ -25,4 +25,4 @@ You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u wan
 
 #### New updates comming soon....
 ******
-**Bot made by** *`b5a862f475b9e4fb7e241a32470dbd07#3365`*
+**Bot made by** *`FishStick#3365`*

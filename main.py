@@ -39,4 +39,4 @@ for file in cogs:
 
 TOKEN = str(os.getenv('TOKEN')) or input('enter token: ')
 #keep_alive.keep_alive()
-bot.run(TOKEN)  #client login
+bot.run(TOKEN) #client login

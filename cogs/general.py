@@ -53,10 +53,6 @@ class General(commands.Cog):
     async def dog_(self, ctx):
         await ctx.send(func.getDogPicture())
     
-    @commands.command(name="math")
-    #math operations command
-    async def math_(self, ctx, arg: str):
-        await ctx.send(func.math_eval(arg))
 
     @commands.command(name="rnum")
     async def rnum_(self,ctx,a: int,b: int,):

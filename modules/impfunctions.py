@@ -99,14 +99,6 @@ def meme():
     return embed
 
 
-def math_eval(arg):
-    try:
-        response = eval(arg)
-        return response
-
-    except:
-        response = "some weird error occured"
-        return response
 
 
 def randnum(a, b):

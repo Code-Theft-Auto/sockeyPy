@@ -141,14 +141,17 @@ class Song:
         self.requester = source.requester
 
     def create_embed(self):
-        embed = (discord.Embed(title='Now playing',
-                               description='```css\n{0.source.title}\n```'.format(self),
-                               color=discord.Color.blurple())
-                 .add_field(name='Duration', value=self.source.duration)
-                 .add_field(name='Requested by', value=self.requester.mention)
-                 .add_field(name='Uploader', value='[{0.source.uploader}]({0.source.uploader_url})'.format(self))
-                 .add_field(name='URL', value='[Click]({0.source.url})'.format(self))
-                 .set_thumbnail(url=self.source.thumbnail))
+        embed = (
+        discord.Embed(title='Now playing',
+        description='```fix\n{0.source.title}\n```'.format(self),
+        color=discord.Color.red())
+
+            .add_field(name='Duration', value=self.source.duration)
+            .add_field(name='Requested by', value=self.requester.mention)
+            .add_field(name='Uploader', value='[{0.source.uploader}]({0.source.uploader_url})'.format(self))
+            .add_field(name='URL', value='[Click]({0.source.url})'.format(self))
+            .set_thumbnail(url=self.source.thumbnail)
+        )
 
         return embed
 
@@ -286,7 +289,7 @@ class Music(commands.Cog):
     async def cog_command_error(self, ctx: commands.Context, error: commands.CommandError):
         await ctx.send('An error occurred: {}'.format(str(error)))
 
-    @commands.command(name='join', invoke_without_subcommand=True)
+    @commands.command(name='join', invoke_without_subcommand=True, aliases=['connect'])
     async def _join(self, ctx: commands.Context):
         """Joins a voice channel."""
 
@@ -297,24 +300,8 @@ class Music(commands.Cog):
 
         ctx.voice_state.voice = await destination.connect()
 
-    @commands.command(name='summon')
-    @commands.has_permissions(manage_guild=True)
-    async def _summon(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None):
-        """Summons the bot to a voice channel.
-        If no channel was specified, it joins your channel.
-        """
 
-        if not channel and not ctx.author.voice:
-            raise VoiceError('You are neither connected to a voice channel nor specified a channel to join.')
-
-        destination = channel or ctx.author.voice.channel
-        if ctx.voice_state.voice:
-            await ctx.voice_state.voice.move_to(destination)
-            return
-
-        ctx.voice_state.voice = await destination.connect()
-
-    @commands.command(name='leave', aliases=['disconnect'])
+    @commands.command(name='leave', aliases=['disconnect','endyourlife'])
     @commands.has_permissions(manage_guild=True)
     async def _leave(self, ctx: commands.Context):
         """Clears the queue and leaves the voice channel."""
@@ -325,7 +312,7 @@ class Music(commands.Cog):
         await ctx.voice_state.stop()
         del self.voice_states[ctx.guild.id]
 
-    @commands.command(name='volume')
+    @commands.command(name='volume',aliases=['vol', 'v'])
     async def _volume(self, ctx: commands.Context, *, volume: int):
         """Sets the volume of the player."""
 
@@ -400,7 +387,7 @@ class Music(commands.Cog):
         else:
             await ctx.send('You have already voted to skip this song.')
 
-    @commands.command(name='queue')
+    @commands.command(name='queue',aliases=['que'])
     async def _queue(self, ctx: commands.Context, *, page: int = 1):
         """Shows the player's queue.
         You can optionally specify the page to show. Each page contains 10 elements.

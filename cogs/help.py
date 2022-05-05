@@ -27,20 +27,5 @@ class Info(commands.Cog):
         bot.help_command.cog = self
 
 
-    @commands.command(help="Show bot uptime")
-    async def uptime(self, ctx):
-        await ctx.send(f"<t:{int(datetime.datetime.timestamp(self.bot.uptime))}:R>")
-
-
-    @commands.command(help="See list of servers")
-    @commands.is_owner()
-    async def guildlist(self, ctx):
-        data = []
-        for guild in self.bot.guilds:
-            to_append = (f"{guild.name}", f"**Owner** {guild.owner} **Member** {guild.member_count} **ID** {guild.id}")
-            data.append(to_append)
-        menu = MenuPages(ServerPageSource(data), ctx)
-        await menu.start()
-
 async def setup(bot):
     await bot.add_cog(Info(bot))

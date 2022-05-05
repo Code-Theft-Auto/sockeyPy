@@ -2,7 +2,6 @@ import os,sys,discord,asyncio
 import base64 as b64
 sys.path.insert(1, '../modules')
 
-import possiblekeywords
 from googlesearch import search
 import impfunctions as func
 from discord.ext.commands import Bot
@@ -58,13 +57,6 @@ class General(commands.Cog):
     async def rnum_(self,ctx,a: int,b: int,):
         await ctx.send(func.randnum(a=a, b=b))
 
-    @commands.command(help_command=True, name="help")
-    async def help_(self, ctx):
-        async with ctx.typing():
-            await asyncio.sleep(3)
-        # help command
-        embed = func.help()
-        await ctx.send(content="**SOCKEY HELP**", embed=embed)
 
     @commands.command()
     async def encode(self, ctx, message_toencode):

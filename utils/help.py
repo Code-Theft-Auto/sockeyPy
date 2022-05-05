@@ -68,7 +68,7 @@ class FrontPageSource(menus.PageSource):
         return self
 
     def format_page(self, menu, page):
-        embed = discord.Embed(title='Bot Help', colour=menu.ctx.bot.embed_color, timestamp=datetime.datetime.utcnow())
+        embed = discord.Embed(title='Bot Help', timestamp=datetime.datetime.utcnow())
         embed.description = f"""
 Use "{menu.ctx.clean_prefix}help command" for more info on a command.
 Use "{menu.ctx.clean_prefix}help category" for more info on a category.
@@ -85,7 +85,6 @@ Use the dropdown menu below to select a category.
             embed.add_field(
                 name='Information',
                 value=(
-                        f"running since <t:{int(menu.ctx.bot.user.created_at.timestamp())}>. "
                         f"currently running on **{len(menu.ctx.bot.guilds)}** servers and watching **{len(menu.ctx.bot.users)}** users nice\n"
                         
                     ),
@@ -142,7 +141,6 @@ class CogPageSource(menus.ListPageSource):
     async def format_page(self, menu, entries):
         embed = discord.Embed(title=self.title.title(),
                               description=f'Use "{self.prefix}help command" for more info on a command.',
-                              color=menu.ctx.bot.embed_color,
                               timestamp=datetime.datetime.utcnow())
 
         for command in entries:

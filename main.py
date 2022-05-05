@@ -10,7 +10,7 @@ from discord.ext import commands
 
 
 
-bot = commands.Bot(command_prefix='.',help_command=None,intents=discord.Intents.all())
+bot = commands.Bot(command_prefix='.',intents=discord.Intents.all())
 #slash = SlashCommand(bot,
                     # sync_commands=True,
                      #sync_on_cog_reload=True,

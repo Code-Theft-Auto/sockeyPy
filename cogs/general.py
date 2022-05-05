@@ -20,6 +20,7 @@ CATAPI = "http://thecatapi.com/api/images/get.php"
 
 
 class General(commands.Cog):
+    emoji="🔖"
     '''
         show the ping of the bot from the user `.ping`\n
         it rolls dice and sends the random number from 1 to 6 `.dice`\n

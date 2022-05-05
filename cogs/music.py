@@ -363,8 +363,8 @@ class Music(commands.Cog):
 
     @commands.command(name='skip')
     async def _skip(self, ctx: commands.Context):
-        """Vote to skip a song. The requester can automatically skip.
-        3 skip votes are needed for the song to be skipped.
+        """Vote to skip a song. The requester can automatically skip
+        3 skip votes are needed for the song to be skipped
         """
 
         if not ctx.voice_state.is_playing:
@@ -391,7 +391,7 @@ class Music(commands.Cog):
     @commands.command(name='queue',aliases=['que'])
     async def _queue(self, ctx: commands.Context, *, page: int = 1):
         """Shows the player's queue.
-        You can optionally specify the page to show. Each page contains 10 elements.
+        You can optionally specify the page to show. Each page contains 10 elements
         """
 
         if len(ctx.voice_state.songs) == 0:
@@ -434,7 +434,7 @@ class Music(commands.Cog):
     @commands.command(name='loop')
     async def _loop(self, ctx: commands.Context):
         """Loops the currently playing song.
-        Invoke this command again to unloop the song.
+        run this command again to unloop the song.
         """
 
         if not ctx.voice_state.is_playing:
@@ -446,12 +446,7 @@ class Music(commands.Cog):
 
     @commands.command(name='play',aliases=['p'])
     async def _play(self, ctx: commands.Context, *, search: str):
-        """Plays a song.
-        If there are songs in the queue, this will be queued until the
-        other songs finished playing.
-        This command automatically searches from various sites if no URL is provided.
-        A list of these sites can be found here: https://rg3.github.io/youtube-dl/supportedsites.html
-        """
+        """Plays a song."""
 
         if not ctx.voice_state.voice:
             await ctx.invoke(self._join)

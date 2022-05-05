@@ -1,4 +1,4 @@
-import discord,Paginator
+import discord
 from discord.ext import commands
 
 AboutPage = discord.Embed(
@@ -69,7 +69,7 @@ class Help(commands.Cog):
 
     @commands.command()
     async def help(self, ctx,):
-        await Paginator.Simple().start(ctx,AllHelpEmbeds)
+        pass
         
         
 

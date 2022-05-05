@@ -21,45 +21,74 @@ CATAPI = "http://thecatapi.com/api/images/get.php"
 
 
 class General(commands.Cog):
-    '''general commands'''
+    '''
+        show the ping of the bot from the user `.ping`\n
+        it rolls dice and sends the random number from 1 to 6 `.dice`\n
+        sends a cute picture of a cat `.cat`\n
+        sends a cute picture of a dog `.dog`\n
+        sends a random number between the given numbers `.rnum <min> <max>`\n
+        encodes a string to base64 `.encode <string>`\n
+        decodes encoded string back to how it used to be `.decode <encoded string>`\n
+        sends some nice memes `.meme`\n
+        shows the number servers the bot is in `.servers`\n
+        #googleit `.gs <query>`\n
+    '''
     
     __slots__ = ('bot')
+
 
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="ping")  #ping pong command
+
+    @commands.command(name="ping")
     async def ping_(self, ctx):
+        """!
+        show the ping of the bot from the user `.ping`
+        """
         async with ctx.typing():
             await asyncio.sleep(0.2)
         await ctx.send(f"pong {round(self.bot.latency*1000)} ms")
 
     @commands.command(name="dice")
-    #roll dice command
     async def dice_(self, ctx):
+        """!
+        it rolls dice and sends the random number from 1 to 6 `.dice`
+        """
         async with ctx.typing():
             await asyncio.sleep(0.2)
         rand_num = func.roll_dice()
         await ctx.send(rand_num)
 
     @commands.command(name="cat")
-    #cat pic command
     async def cat_(self, ctx):
+        """!
+        sends a cute picture of a cat `.cat`
+        """
         await ctx.send(func.getCatPicture())
 
     @commands.command(name="dog")
     #dog pic command
     async def dog_(self, ctx):
+        """!
+        sends a cure picture of a dog `.dog`
+        """
         await ctx.send(func.getDogPicture())
     
 
     @commands.command(name="rnum")
     async def rnum_(self,ctx,a: int,b: int,):
+        """!
+        sends a random number between the given numbers `.rnum <min> <max>`
+        """
         await ctx.send(func.randnum(a=a, b=b))
 
 
     @commands.command()
     async def encode(self, ctx, message_toencode):
+        """!
+        encodes a string to base64 `.encode <string>`
+        """
         await ctx.message.delete()
 
         message_toencode = str(message_toencode).encode()
@@ -73,6 +102,9 @@ class General(commands.Cog):
 
     @commands.command()
     async def decode(self, ctx, message_toencode):
+        """!
+        decodes encoded string back to how it used to be `.decode <encoded string>`
+        """
         await ctx.message.delete()
 
         message_toencode = str(message_toencode).encode()
@@ -84,19 +116,12 @@ class General(commands.Cog):
 
         await ctx.author.send(f"decoded string: {message_toencode}")
 
-    @commands.command()
-    async def encrypt(self, ctx, string: str):
-        await ctx.message.delete()
-        token, key = func.encrypt(string)
-        await ctx.author.send(f"encrypted string: {token} | key: {key}")
-
-    @commands.command()
-    async def decrypt(self, ctx, token, key):
-        decodedstr = func.decrypt(token, key)
-        await ctx.author.send(f"decrypted string: {decodedstr}")
     
     @commands.command(name="meme")
     async def meme_(self,ctx):
+        """!
+        sends some nice memes `.meme`
+        """
         em = func.meme()
         await ctx.send(embed=em, components=[create_actionrow(*NEXTBUTTON)])
 
@@ -111,22 +136,22 @@ class General(commands.Cog):
     
     @commands.command(name="gs")
     async def gs(self, ctx, *, query):
+        """!
+        #googleit `.gs <query>`
+        # """
         await ctx.author.send(f"Here are the links related to your question!")
         for j in search(query, safe='on', start=1, stop=1):
             await ctx.author.send(f"\n:point_right: {j}")
             await ctx.author.send("Have any more questions:question:\nFeel free to ask again :smiley: !")
     
     @commands.command(name="servers")
-    async def servers(self, ctx):
-        await ctx.send(
-            embed=discord.Embed(description=f"`i am in {len(self.bot.guilds)} guilds`",
-                            color=discord.Color.green()))
-
-    @commands.command(name="servname")
-    async def servname(self,ctx):
+    async def servers_(self,ctx):
+        """!
+        shows the number servers the bot is in `.servers`
+        """
         names = []
         for guild in self.bot.guilds:names.append(f"**`{guild.name}`**")
-        await ctx.send(embed=discord.Embed(description=f"\n".join(names),color=discord.Color.green()))
+        await ctx.send(f"**guilds: {len(self.bot.guilds)}**",embed=discord.Embed(description=f"\n".join(names),color=discord.Color.green()))
 
 
 def setup(bot):

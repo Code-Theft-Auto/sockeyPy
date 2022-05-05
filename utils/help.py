@@ -197,7 +197,7 @@ class CustomHelp(commands.HelpCommand):
 
     async def send_command_help(self, command):
         await self.context.channel.typing()
-        embed = discord.Embed(title=command.name, color=discord.Color.from_rgb(225, 0, 92),
+        embed = discord.Embed(title=command.name,
                               description=f'Use {self.context.clean_prefix}help [something] for more info on a command or category. \nExample: {self.context.clean_prefix}help Economy')
         if command.help:
             embed.add_field(name="Description", value=f"```{command.help}```", inline=False)

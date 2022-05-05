@@ -3,7 +3,7 @@ from discord.ext import commands, menus
 from .menuUtils import MenuPages
 from typing import Dict, List, Union, Optional, Any
 import itertools
-import datetime
+
 
 
 class HelpSelectMenu(discord.ui.Select['HelpMenuPage']):
@@ -68,7 +68,7 @@ class FrontPageSource(menus.PageSource):
         return self
 
     def format_page(self, menu, page):
-        embed = discord.Embed(title='Bot Help', timestamp=datetime.datetime.utcnow())
+        embed = discord.Embed(title='Bot Help')
         embed.description = f"""
 Use "{menu.ctx.clean_prefix}help command" for more info on a command.
 Use "{menu.ctx.clean_prefix}help category" for more info on a category.
@@ -140,8 +140,7 @@ class CogPageSource(menus.ListPageSource):
 
     async def format_page(self, menu, entries):
         embed = discord.Embed(title=self.title.title(),
-                              description=f'Use "{self.prefix}help command" for more info on a command.',
-                              timestamp=datetime.datetime.utcnow())
+                              description=f'Use "{self.prefix}help command" for more info on a command.',)
 
         for command in entries:
             signature = f'`{self.prefix}{command.qualified_name} {command.signature}`'

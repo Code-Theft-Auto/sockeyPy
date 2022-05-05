@@ -27,5 +27,6 @@ class Info(commands.Cog):
         bot.help_command.cog = self
 
 
+
 async def setup(bot):
     await bot.add_cog(Info(bot))

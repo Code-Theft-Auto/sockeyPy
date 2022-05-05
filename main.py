@@ -10,7 +10,7 @@ from discord_slash import SlashCommand
 
 
 
-bot = commands.Bot(command_prefix='.',)
+bot = commands.Bot(command_prefix='.',help_command=None)
 slash = SlashCommand(bot,
                      sync_commands=True,
                      sync_on_cog_reload=True,
@@ -22,6 +22,7 @@ cogs = [
     'music',
     'slashcog',
     'coglur',
+    'help'
 ]
 
 

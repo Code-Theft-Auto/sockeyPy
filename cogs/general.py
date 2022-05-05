@@ -1,16 +1,15 @@
-import os,sys,discord,asyncio
+import sys,discord,asyncio
 import base64 as b64
 sys.path.insert(1, '../modules')
 
 from googlesearch import search
 import impfunctions as func
-from discord.ext.commands import Bot
 from discord.ext import commands
-from discord_slash.model import ButtonStyle
-from discord_slash.utils.manage_components import ComponentContext, wait_for_component,create_button,create_actionrow
+##from discord_slash.model import ButtonStyle
+#from discord_slash.utils.manage_components import ComponentContext, wait_for_component,create_button,create_actionrow
 
 
-NEXTBUTTON = [create_button(ButtonStyle.green, label="Next", custom_id="NextMeme")]
+#NEXTBUTTON = [create_button(ButtonStyle.green, label="Next", custom_id="NextMeme")]
 ctx = discord.ext.commands.context.Context
 message = discord.ext.commands.context.Context
 
@@ -84,7 +83,7 @@ class General(commands.Cog):
         await ctx.send(func.randnum(a=a, b=b))
 
 
-    @commands.command()
+    @commands.command(description="encodes a string to base64 `.encode <string>`")
     async def encode(self, ctx, message_toencode):
         """!
         encodes a string to base64 `.encode <string>`
@@ -100,7 +99,7 @@ class General(commands.Cog):
         
         await ctx.author.send(f"encoded string: {message_toencode}")
 
-    @commands.command()
+    @commands.command(description="decodes encoded string back to how it used to be `.decode <encoded string>`")
     async def decode(self, ctx, message_toencode):
         """!
         decodes encoded string back to how it used to be `.decode <encoded string>`
@@ -116,12 +115,12 @@ class General(commands.Cog):
 
         await ctx.author.send(f"decoded string: {message_toencode}")
 
-    
-    @commands.command(name="meme")
+    """
+    @commands.command(name="meme",description="sends some nice memes `.meme`")
     async def meme_(self,ctx):
-        """!
+        
         sends some nice memes `.meme`
-        """
+        
         em = func.meme()
         await ctx.send(embed=em, components=[create_actionrow(*NEXTBUTTON)])
 
@@ -133,7 +132,7 @@ class General(commands.Cog):
                 await button_ctx.edit_origin(embed=func.meme())
             except asyncio.exceptions.TimeoutError:
                 break
-    
+    """
     @commands.command(name="gs")
     async def gs(self, ctx, *, query):
         """!
@@ -154,5 +153,5 @@ class General(commands.Cog):
         await ctx.send(f"**guilds: {len(self.bot.guilds)}**",embed=discord.Embed(description=f"\n".join(names),color=discord.Color.green()))
 
 
-def setup(bot):
-    bot.add_cog(General(bot))
+async def setup(bot):
+    await bot.add_cog(General(bot))

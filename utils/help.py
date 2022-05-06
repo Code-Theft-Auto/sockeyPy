@@ -1,3 +1,4 @@
+#thanks https://github.com/DangVietH
 import discord
 from discord.ext import commands, menus
 from .menuUtils import MenuPages

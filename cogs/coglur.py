@@ -1,6 +1,7 @@
 from discord.ext import commands
 from discord.ext.commands import Bot
 class Owner(commands.Cog):
+    emoji="👑"
     __slots__ = ('bot')
     def __init__(self, bot):
         self.bot = bot
@@ -37,5 +38,5 @@ class Owner(commands.Cog):
 
 
 
-def setup(bot: Bot):
-    bot.add_cog(Owner(bot))
+async def setup(bot: Bot):
+    await bot.add_cog(Owner(bot))

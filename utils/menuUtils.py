@@ -139,7 +139,7 @@ class MenuPages(discord.ui.View):
     async def last_page(self, interaction, button):
         await self.show_page(interaction, self._source.get_max_pages() - 1)
 
-    @discord.ui.button(emoji='🗑', style=discord.ButtonStyle.red)
+    @discord.ui.button(emoji='❌', style=discord.ButtonStyle.red)
     async def stop_page(self, interaction, button):
         await self.message.edit(view=None)
         self.stop()

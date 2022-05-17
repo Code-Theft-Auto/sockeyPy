@@ -16,4 +16,4 @@ jobs:
     - name: Build the Docker image
       env:
         paswrd: ${{secrets.DOCKERPASSWORD}}
-      run: docker login -u codetheftauto -p $passwrd;docker build . --file Dockerfile --tag sockey:$(date +%s)
+      run: docker login -u codetheftauto -p "$passwrd";docker build . --file Dockerfile --tag sockey:$(date +%s)

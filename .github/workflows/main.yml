@@ -2,10 +2,8 @@ name: CI
 
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  schedule:
+    - cron: "*/5 * * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,6 +20,6 @@ jobs:
       - name: pull python:3.10.4-slim
         run: docker pull python:3.10.4-slim
       - name: docker build
-        run: docker build . -t ghcr.io/code-theft-auto/sockeypy
+        run: docker build . -t ghcr.io/code-theft-auto/sockeypy:$(date +%d-%m-%y)
       - name: docker push
-        run: docker push ghcr.io/code-theft-auto/sockeypy
+        run: docker push ghcr.io/code-theft-auto/sockeypy:$(date +%d-%m-%y)

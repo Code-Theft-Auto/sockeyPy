@@ -18,11 +18,10 @@ jobs:
       - name: docker login on ghcr.io
         env:
           AT: ${{ secrets.AT }}
-          VER: $(date +%s)
         run: docker login ghcr.io -u code-theft-auto -p $AT
       - name: pull python:3.10.4-slim
         run: docker pull python:3.10.4-slim
       - name: docker build
-        run: docker build . -t "ghcr.io/code-theft-auto/sockeypy:$VER"
+        run: docker build . -t ghcr.io/code-theft-auto/sockeypy:latest
       - name: docker push
-        run: docker push ghcr.io/code-theft-auto/sockeypy:$VER
+        run: docker push ghcr.io/code-theft-auto/sockeypy:latest

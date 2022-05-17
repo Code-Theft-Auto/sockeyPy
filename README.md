@@ -11,11 +11,11 @@ You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u wan
 
 
 ## setup if u want to run by yourself
-- `git clone https://github.com/DevER-M/sockeyPy.git`
+- `git clone https://github.com/Code-Theft-Auto/sockeyPy.git`
 - `cd sockeyPy`
 - *make sure you have python and pip in the latest version*
 - `pip install -r requirements.txt`
-- make a file called .env
+- make a file called .env or `export TOKEN="YOUR_TOKEN"` in shell (if you use linux or macos)
 - Add your token in this [line](/main.py#L42) ```bot.run(<YOURTOKEN>)```
 - `python main.py` or `py main.py`
 

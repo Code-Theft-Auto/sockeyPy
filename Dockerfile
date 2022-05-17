@@ -1,4 +1,4 @@
-FROM python3.10.4-alpine
+FROM python3.10.4-slim
 COPY . /app
 WORKDIR /app
 RUN apk update;apk add git

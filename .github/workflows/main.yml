@@ -22,6 +22,6 @@ jobs:
       - name: pull python:3.10.4-slim
         run: docker pull python:3.10.4-slim
       - name: docker build
-        run: docker build . -t ghcr.io/code-theft-auto/sockeypy:latest
+        run: docker build . -t ghcr.io/code-theft-auto/sockeypy
       - name: docker push
-        run: docker push ghcr.io/code-theft-auto/sockeypy:latest
+        run: docker push ghcr.io/code-theft-auto/sockeypy

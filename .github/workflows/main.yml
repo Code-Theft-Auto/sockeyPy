@@ -1,0 +1,26 @@
+name: CI
+
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - name: docker login
+        env:
+          DOCKER_USER: ${{ secrets.DOCKER_USER }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: docker login -u $DOCKER_USER -p $DOCKER_PASSOWRD
+      - name: docker build
+        run: docker build . -t codetheftauto/sockey:latest
+      - name: docker push
+        run: docker push codetheftauto/sockey:latest

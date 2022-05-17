@@ -15,12 +15,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: docker login
+      - name: docker login on ghcr.io
         env:
-          DOCKER_USER: ${{ secrets.DOCKER_USER }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        run: docker login -u $DOCKER_USER -p $DOCKER_PASSOWRD
+          AT: ${{ secrets.AT }}
+          VER: $(date +%s)
+        run: docker login ghcr.io -u code-theft-auto -p $AT
+      - name: pull python:3.10.4-slim
+        run: docker pull python:3.10.4-slim
       - name: docker build
-        run: docker build . -t codetheftauto/sockey:latest
+        run: docker build . -t ghcr.io/code-theft-auto/sockeypy:$VER
       - name: docker push
-        run: docker push codetheftauto/sockey:latest
+        run: docker push ghcr.io/code-theft-auto/sockeypy:$VER

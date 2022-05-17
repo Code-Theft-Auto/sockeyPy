@@ -20,7 +20,8 @@ You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u wan
 - `python main.py` or `py main.py`
 
 ## Bot commands
-![help menu](https://user-images.githubusercontent.com/78902540/153714982-5e7296f7-30a0-44fa-ab9a-6a17d88db499.png)
+![helppic](https://user-images.githubusercontent.com/78902540/168753523-8bde679f-f936-4267-91dc-30fc249132be.png)
+
 
 
 #### New updates comming soon....

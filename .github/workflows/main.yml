@@ -18,7 +18,7 @@ jobs:
           AT: ${{ secrets.AT }}
         run: docker login ghcr.io -u code-theft-auto -p $AT
       - name: pull python:3.10.4-slim
-        run: docker pull python:3.10.4-slim
+        run: docker pull python:3.10.4-alpine
       - name: docker build
         run: docker build . -t ghcr.io/code-theft-auto/sockeypy:$(date +%d-%m-%y)
       - name: docker push

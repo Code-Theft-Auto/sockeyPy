@@ -1,4 +1,4 @@
-<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Sockeypic" src="https://cdn.discordapp.com/attachments/970962518606479380/976737385062739988/avatar.png">  
+<img width="100" height="100" align="left" style="float: left; margin: 0 10px 0 0;" alt="Sockeypic" src="https://cdn.discordapp.com/attachments/970962518606479380/976737385062739988/avatar.png">  
 
 # sockey
 [![CI](https://github.com/Code-Theft-Auto/sockeyPy/actions/workflows/main.yml/badge.svg)](https://github.com/Code-Theft-Auto/sockeyPy/actions/workflows/main.yml)
@@ -7,7 +7,7 @@
 [![Linux](https://img.shields.io/badge/os-linux-blue.svg)](https://github.com/torvalds/linux)
 [![license](https://img.shields.io/badge/license-CC0_1.0-green.svg)](https://github.com/Code-Theft-Auto/sockeyPy/blob/master/LICENSE)
 
-*A simple <a href=https://github.com/Rapptz/discord.py>discord.py</a> general purpose music bot*
+*A simple [discord.py](https://github.com/Rapptz/discord.py) general purpose music bot*
  
 sockey is an open source Discord bot by [DevER-M](https://github.com/DevER-M). that is constantly growing. You can invite it  
 to your Discord server using [this](https://discord.com/api/oauth2/authorize?client_id=916685474364534805&permissions=275147647024&scope=bot%20applications.commands) link! It comes packaged with a variety of commands.

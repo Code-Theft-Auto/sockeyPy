@@ -5,7 +5,7 @@
 [![website](https://img.shields.io/badge/website-online-green.svg)](https://code-theft-auto.github.io/sockeyPy/)
 [![python](https://img.shields.io/badge/python-3.10.4-yellow.svg)](https://www.python.org/downloads/release/python-3104/)
 [![Linux](https://img.shields.io/badge/os-linux-blue.svg)](https://github.com/torvalds/linux)
-[![license](https://img.shields.io/badge/license-CC0_1.0-green.svg)](https://github.com/Code-Theft-Auto/sockeyPy/blob/master/LICENSE)
+[![license](https://img.shields.io/badge/license-GPL3.0-green.svg)](https://github.com/Code-Theft-Auto/sockeyPy/blob/master/LICENSE)
 
 *A simple <a href=https://github.com/Rapptz/discord.py>discord.py</a> general purpose music bot*
  

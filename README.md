@@ -18,6 +18,7 @@ Feel free to add a star :star: to the repository to promote the project!
 *   🎉  **Fun**: `cat`, `dog`, `rnum`, `gs`, `dice` and many more comming soon!
 *   🎵  **Music**: `play`, `queue`, `shuffle`, `loop`, `volume` and **8** more
 *   ❔  **Misc**: `ecode`, `decode`, `ping`, `servers` and many more comming soon!
+*more commands comming soon....*
 
 ## Self hosting
 ### Docker:

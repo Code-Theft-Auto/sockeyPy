@@ -43,8 +43,11 @@ Code-Theft-Auto/sockeyPy is licensed under the **Creative Commons Zero v1.0 Univ
 
 ## Credits
 
-- [DangVietH](https://github.com/DangVietH/) - Pagination for help command [here](https://github.com/DangVietH/DangVietBot/tree/master/utils)
-- [vbe0201](https://github.com/vbe0201) - some code for shuffle and loop command
+- [@DangVietH](https://github.com/DangVietH/) - Pagination for help command [here](https://github.com/DangVietH/DangVietBot/tree/master/utils)
+- [@vbe0201](https://github.com/vbe0201) - some code for shuffle and loop command
 
-******
-**Bot made by** *`FishStick#3365`*
+
+# Author
+sockey is developed by [@DevER-M](https://github.com/DevER-M) 
+- [Discord](https://discord.com/channels/@me/780693630187995167) *FishStick#3365*
+- [Reddit](https://www.reddit.com/user/FishStickSocks/) *FishStickSocks*

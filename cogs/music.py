@@ -1,6 +1,3 @@
-# thanks https://gist.github.com/vbe0201
-
-
 import asyncio
 import functools
 import itertools

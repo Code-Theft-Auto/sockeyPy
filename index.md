@@ -1,16 +1,26 @@
-## sockey 
+<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Sockeypic" src="https://cdn.discordapp.com/attachments/970962518606479380/976737385062739988/avatar.png">  
 
-A simple discord.py general purpose music bot
+# sockey
+[![CI](https://github.com/Code-Theft-Auto/sockeyPy/actions/workflows/main.yml/badge.svg)](https://github.com/Code-Theft-Auto/sockeyPy/actions/workflows/main.yml)
+[![website](https://img.shields.io/badge/website-online-green.svg)](https://code-theft-auto.github.io/sockeyPy/)
+[![python](https://img.shields.io/badge/python-3.10.4-yellow.svg)](https://www.python.org/downloads/release/python-3104/)
+[![Linux](https://img.shields.io/badge/os-linux-blue.svg)](https://github.com/torvalds/linux)
+[![license](https://img.shields.io/badge/license-CC0_1.0-green.svg)](https://github.com/Code-Theft-Auto/sockeyPy/blob/master/LICENSE)
+
+*A simple <a href=https://github.com/Rapptz/discord.py>discord.py</a> general purpose music bot*
+ 
+sockey is an open source Discord bot by [DevER-M](https://github.com/DevER-M). that is constantly growing. You can invite it  
+to your Discord server using [this](https://discord.com/api/oauth2/authorize?client_id=916685474364534805&permissions=275147647024&scope=bot%20applications.commands) link! It comes packaged with a variety of commands.
+Feel free to add a star :star: to the repository to promote the project!  
 
 
-[![homepage](https://user-images.githubusercontent.com/78902540/153714070-79edddbb-21a5-45e2-8a70-a54c8c52a933.png )](https://discord.com/api/oauth2/authorize?client_id=916685474364534805&permissions=275147647024&scope=bot%20applications.commands "invite link")
+## Features
+*   🎉  **Fun**: `cat`, `dog`, `rnum`, `gs`, `dice` and many more comming soon!
+*   🎵  **Music**: `play`, `queue`, `shuffle`, `loop`, `volume` and **8** more
+*   ❔  **Misc**: `ecode`, `decode`, `ping`, `servers` and many more comming soon!
+*more commands comming soon....*
 
-
-
-You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u want to 
-
-
-## setup if u want to run by yourself
+## Self hosting
 ### Docker:
   - make sure you have docker installed
   - `docker pull ghcr.io/code-theft-auto/sockeypy:latest`
@@ -21,14 +31,20 @@ You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u wan
   - *make sure you have python and pip in the latest version*
   - `pip install -r requirements.txt`
   - make a file called .env or `export TOKEN="YOUR_TOKEN"` in shell (if you use linux or macos)
-  - Add your token in this [line](/main.py#L42) ```bot.run(<YOURTOKEN>)```
+  - if you don't want to use environ ment variables you can add your token in this [line](/main.py#L42) ```bot.run(<YOURTOKEN>)```
   - `python main.py` or `py main.py`
+## Contributing
 
-## Bot commands
-![helppic](https://user-images.githubusercontent.com/78902540/168753523-8bde679f-f936-4267-91dc-30fc249132be.png)
+Contributions, issues and feature requests are welcome.
+Feel free to check **[issues](/issues)** page if you want to contribute.
 
+## License
+Code-Theft-Auto/sockeyPy is licensed under the **Creative Commons Zero v1.0 Universal** license
 
+## Credits
 
-#### New updates comming soon....
+- [DangVietH](https://github.com/DangVietH/) - Pagination for help command [here](https://github.com/DangVietH/DangVietBot/tree/master/utils)
+- [vbe0201](https://github.com/vbe0201) - some code for shuffle and loop command
+
 ******
 **Bot made by** *`FishStick#3365`*

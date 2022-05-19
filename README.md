@@ -7,9 +7,6 @@ A simple discord.py general purpose music bot
 
 
 
-You can join my [discord server](https://discord.com/invite/f9zy7HYXg4) if u want to 
-
-
 ## setup if u want to run by yourself
 ### Docker:
   - make sure you have docker installed

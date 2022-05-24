@@ -1,9 +1,6 @@
 import discord
 from discord.ext import commands, menus
-from utils.menuUtils import MenuPages
 from utils.help import CustomHelp
-import datetime
-import io
 
 
 class ServerPageSource(menus.ListPageSource):

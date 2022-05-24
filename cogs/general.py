@@ -15,7 +15,7 @@ CATAPI = "http://thecatapi.com/api/images/get.php"
 
 class General(commands.Cog):
     emoji="🔖"
-    
+
     __slots__ = ['bot']
 
 
@@ -48,7 +48,7 @@ class General(commands.Cog):
     async def dog_(self, ctx):
         """sends a cure picture of a dog"""
         await ctx.send(func.getDogPicture())
-    
+
 
     @commands.command(name="rnum")
     async def rnum_(self,ctx,a: int,b: int,):
@@ -72,15 +72,15 @@ class General(commands.Cog):
         text64 = str(b64.b64decode(text))
         await ctx.author.send(f"decoded string: {text64}")
 
-    
+
     @commands.command(name="meme",description="sends some nice memes `.meme`")
     async def meme_(self,ctx):
         """sends some nice memes """
-        
+
         em = func.meme()
         await ctx.send(embed=em,)
 
- 
+
 
     @commands.command(name="gs")
     async def gs(self, ctx, *, query):
@@ -89,7 +89,7 @@ class General(commands.Cog):
         for j in search(query, safe='on', start=1, stop=1):
             await ctx.author.send(f"\n:point_right: {j}")
             await ctx.author.send("Have any more questions:question:\nFeel free to ask again :smiley: !")
-    
+
     @commands.command(name="servers")
     async def servers_(self,ctx):
         """shows the number servers the bot is in"""

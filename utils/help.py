@@ -87,7 +87,7 @@ Use the dropdown menu below to select a category.
                 name='Information',
                 value=(
                         f"currently running on **{len(menu.ctx.bot.guilds)}** servers and watching **{len(menu.ctx.bot.users)}** users nice\n"
-                        
+
                     ),
                 inline=False
             )
@@ -206,5 +206,5 @@ class CustomHelp(commands.HelpCommand):
             embed.add_field(name="Aliases", value=f"```{command.aliases}```", inline=False)
         embed.add_field(name="Usage", value=f"```{self.get_command_signature(command)}```", inline=False)
         await self.get_destination().send(embed=embed)
-        
+
 

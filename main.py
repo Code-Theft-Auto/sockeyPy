@@ -2,9 +2,8 @@ import os
 import sys
 sys.path.insert(1, './modules')
 
-import discord,asyncio
-import keep_alive
-from googlesearch import search
+import discord
+import asyncio
 from discord.ext import commands
 
 

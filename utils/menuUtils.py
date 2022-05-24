@@ -119,7 +119,7 @@ class MenuPages(discord.ui.View):
     async def interaction_check(self, interaction) -> bool:
         if interaction.user == self.ctx.author:
             return True
-        await interaction.response.send_message("you cant use these buttons \:( ", ephemeral=True)
+        await interaction.response.send_message("you cant use these buttons \\:( ", ephemeral=True)
         return False
 
     @discord.ui.button(emoji='⏪', style=discord.ButtonStyle.grey)

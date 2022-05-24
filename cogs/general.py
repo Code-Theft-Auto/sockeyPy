@@ -16,7 +16,7 @@ CATAPI = "http://thecatapi.com/api/images/get.php"
 class General(commands.Cog):
     emoji="🔖"
     
-    __slots__ = ('bot')
+    __slots__ = ['bot']
 
 
     def __init__(self, bot):

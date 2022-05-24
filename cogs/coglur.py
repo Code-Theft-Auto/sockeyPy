@@ -3,7 +3,7 @@ from discord.ext.commands import Bot
 
 class Owner(commands.Cog):
     emoji="👑"
-    __slots__ = ('bot')
+    __slots__ = ['bot']
     def __init__(self, bot):
         self.bot = bot
     

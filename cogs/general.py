@@ -5,16 +5,10 @@ sys.path.insert(1, '../modules')
 from googlesearch import search
 import impfunctions as func
 from discord.ext import commands
-##from discord_slash.model import ButtonStyle
-#from discord_slash.utils.manage_components import ComponentContext, wait_for_component,create_button,create_actionrow
 
 
-#NEXTBUTTON = [create_button(ButtonStyle.green, label="Next", custom_id="NextMeme")]
 ctx = discord.ext.commands.context.Context
 message = discord.ext.commands.context.Context
-
-
-
 DOGAPI = "http://thedogapi.com/api/images/get.php"
 CATAPI = "http://thecatapi.com/api/images/get.php"
 
@@ -63,32 +57,20 @@ class General(commands.Cog):
 
 
     @commands.command(description="encodes a string to base64 `.encode <string>`")
-    async def encode(self, ctx, message_toencode):
+    async def encode(self, ctx, text:str):
         """encodes a string to base64"""
         await ctx.message.delete()
-
-        message_toencode = str(message_toencode).encode()
-
-        message_toencode = b64.b64encode(message_toencode)
-        message_toencode = str(message_toencode)
-        message_toencode = message_toencode.replace("b'", "")
-        message_toencode = message_toencode.replace("'", "")
-        
-        await ctx.author.send(f"encoded string: {message_toencode}")
+        text = text.encode()
+        text64 = str(b64.b64encode(text))
+        await ctx.author.send(f"encoded string: {text64}")
 
     @commands.command(description="decodes encoded string back to how it used to be `.decode <encoded string>`")
     async def decode(self, ctx, message_toencode):
         """decodes encoded string back to how it used to be"""
         await ctx.message.delete()
-
-        message_toencode = str(message_toencode).encode()
-
-        message_toencode = b64.b64decode(message_toencode)
-        message_toencode = str(message_toencode)
-        message_toencode = message_toencode.replace("b'", "")
-        message_toencode = message_toencode.replace("'", "")
-
-        await ctx.author.send(f"decoded string: {message_toencode}")
+        text = text.encode()
+        text64 = str(b64.b64decode(text))
+        await ctx.author.send(f"decoded string: {text64}")
 
     
     @commands.command(name="meme",description="sends some nice memes `.meme`")

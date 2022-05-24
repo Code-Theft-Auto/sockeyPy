@@ -1,5 +1,6 @@
 from discord.ext import commands
 from discord.ext.commands import Bot
+
 class Owner(commands.Cog):
     emoji="👑"
     __slots__ = ('bot')

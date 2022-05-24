@@ -77,9 +77,9 @@ class MenuPages(discord.ui.View):
         value = await discord.utils.maybe_coroutine(self._source.format_page, self, page)
         if isinstance(value, dict):
             return value
-        elif isinstance(value, str):
+        if isinstance(value, str):
             return {'content': value, 'embed': None}
-        elif isinstance(value, discord.Embed):
+        if isinstance(value, discord.Embed):
             return {'embed': value, 'content': None}
 
     async def show_page(self, interaction, page_number):

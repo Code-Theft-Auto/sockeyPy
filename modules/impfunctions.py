@@ -1,7 +1,7 @@
 import random
 import requests
 import discord
-from bs4 import BeautifulSoup
+
 
 
 DOGAPI = "http://thedogapi.com/api/images/get.php"

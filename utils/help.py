@@ -33,7 +33,8 @@ class HelpSelectMenu(discord.ui.Select['HelpMenuPage']):
             self.add_option(label=cog.qualified_name, value=cog.qualified_name, description=description, emoji=emoji)
 
     async def callback(self, interaction: discord.Interaction):
-        assert self.view is not None
+        if self.view is None:
+            raise AssertionError
         value = self.values[0]
         if value == '__index':
             await self.view.rebind(FrontPageSource(), interaction)

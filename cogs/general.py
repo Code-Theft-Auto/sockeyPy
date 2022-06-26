@@ -15,10 +15,6 @@ CATAPI = "http://thecatapi.com/api/images/get.php"
 
 class General(commands.Cog):
     emoji="🔖"
-
-    __slots__ = ['bot']
-
-
     def __init__(self, bot):
         self.bot = bot
 
@@ -41,13 +37,13 @@ class General(commands.Cog):
     @commands.command(name="cat")
     async def cat_(self, ctx):
         """sends a cute picture of a cat"""
-        await ctx.send(func.getCatPicture())
+        await ctx.send(await func.getCatPicture())
 
     @commands.command(name="dog")
     #dog pic command
     async def dog_(self, ctx):
         """sends a cure picture of a dog"""
-        await ctx.send(func.getDogPicture())
+        await ctx.send(await func.getDogPicture())
 
 
     @commands.command(name="rnum")
@@ -77,7 +73,7 @@ class General(commands.Cog):
     async def meme_(self,ctx):
         """sends some nice memes """
 
-        em = func.meme()
+        em = await func.meme()
         await ctx.send(embed=em,)
 
 

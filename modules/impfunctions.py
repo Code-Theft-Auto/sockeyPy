@@ -1,7 +1,7 @@
 import random
-import requests
+import aiohttp
 import discord
-
+from io import BytesIO
 
 
 DOGAPI = "http://thedogapi.com/api/images/get.php"
@@ -12,24 +12,35 @@ def roll_dice():
     return random.randint(1, 6)
 
 
-def getCatPicture():
-    catPicture = requests.get(CATAPI)
-    if catPicture.status_code == 200:
-        catPicture = catPicture.url
+async def getCatPicture():
+    async with aiohttp.ClientSession( ) as session:
+        async with session.get(CATAPI) as response:
+            catPicture = await response.read()
+    
+            if response.status_code == 200:
+                catPicture = BytesIO(catPicture)
+        
         return catPicture
 
 
-def getDogPicture():
-    catPicture = requests.get(DOGAPI)
-    if catPicture.status_code == 200:
-        catPicture = catPicture.url
-        return catPicture
+async def getDogPicture():
+    async with aiohttp.ClientSession( ) as session:
+        async with session.get(DOGAPI) as response:
+            dogPicture = await response.read()
+    
+            if response.status_code == 200:
+                dogPicture = BytesIO(dogPicture)
+        
+        return dogPicture
 
 
-def meme():
-    response = requests.get("https://memes.blademaker.tv/api?lang=en")
-    jsonresponse = response.json()
 
+async def meme():
+    async with aiohttp.ClientSession() as session:
+        async with session.get("https://memes.blademaker.tv/api?lang=en") as response:
+            jsonresponse = await response.json()
+
+    
     title = jsonresponse["title"]
     ups = jsonresponse["ups"]
     image = jsonresponse["image"]

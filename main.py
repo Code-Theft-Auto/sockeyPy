@@ -5,10 +5,10 @@ sys.path.insert(1, './modules')
 import discord
 import asyncio
 from discord.ext import commands
+import aiohttp
 
-
-bot = commands.Bot(command_prefix='.',intents=discord.Intents.all())
 beats_activity = [discord.ActivityType.listening, "Beats"]
+bot = commands.Bot(command_prefix='.',intents=discord.Intents.all(), activity=discord.Activity(type=beats_activity[0], name=beats_activity[1]),status=discord.Status.dnd)
 
 cogs = [
     'general',
@@ -21,7 +21,6 @@ cogs = [
 @bot.event
 async def on_ready():
     print("logged in as {0.user}".format(bot))
-    await bot.change_presence(activity=discord.Activity(type=beats_activity[0], name=beats_activity[1]),status=discord.Status.dnd)
 
 async def load_extension():
     for file in cogs:

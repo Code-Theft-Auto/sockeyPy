@@ -1,4 +1,6 @@
-import sys,discord,asyncio
+import sys
+import discord
+import asyncio
 import base64 as b64
 sys.path.insert(1, '../modules')
 

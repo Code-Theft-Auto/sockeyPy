@@ -83,7 +83,7 @@ class General(commands.Cog):
     @commands.command(name="gs")
     async def gs(self, ctx, *, query):
         """#googleit"""
-        await ctx.author.send(f"Here are the links related to your question!")
+        await ctx.author.send("Here are the links related to your question!")
         for j in search(query, safe='on', start=1, stop=1):
             await ctx.author.send(f"\n:point_right: {j}")
             await ctx.author.send("Have any more questions:question:\nFeel free to ask again :smiley: !")
@@ -93,7 +93,7 @@ class General(commands.Cog):
         """shows the number servers the bot is in"""
         names = []
         for guild in self.bot.guilds:names.append(f"**`{guild.name}`**")
-        await ctx.send(f"**guilds: {len(self.bot.guilds)}**",embed=discord.Embed(description=f"\n".join(names),color=discord.Color.green()))
+        await ctx.send(f"**guilds: {len(self.bot.guilds)}**",embed=discord.Embed(description="\n".join(names),color=discord.Color.green()))
 
 
 async def setup(bot):

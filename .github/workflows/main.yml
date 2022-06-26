@@ -13,11 +13,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - name: docker login on ghcr.io
-        env:
-          AT: ${{ secrets.AT }}
-        run: echo "$AT" | docker login ghcr.io -u code-theft-auto --password-stdin
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: pull python:3.10.4-slim
         run: docker pull python:3.10.4-alpine
       - name: docker build

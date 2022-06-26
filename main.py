@@ -5,7 +5,6 @@ sys.path.insert(1, './modules')
 import discord
 import asyncio
 from discord.ext import commands
-import aiohttp
 
 beats_activity = [discord.ActivityType.listening, "Beats"]
 bot = commands.Bot(command_prefix='.',intents=discord.Intents.all(), activity=discord.Activity(type=beats_activity[0], name=beats_activity[1]),status=discord.Status.dnd)

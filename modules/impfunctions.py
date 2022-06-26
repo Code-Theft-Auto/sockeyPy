@@ -16,10 +16,10 @@ async def getCatPicture():
     async with aiohttp.ClientSession( ) as session:
         async with session.get(CATAPI) as response:
             catPicture = await response.read()
-    
+
             if response.status_code == 200:
                 catPicture = BytesIO(catPicture)
-        
+
         return catPicture
 
 
@@ -27,10 +27,10 @@ async def getDogPicture():
     async with aiohttp.ClientSession( ) as session:
         async with session.get(DOGAPI) as response:
             dogPicture = await response.read()
-    
+
             if response.status_code == 200:
                 dogPicture = BytesIO(dogPicture)
-        
+
         return dogPicture
 
 
@@ -40,7 +40,7 @@ async def meme():
         async with session.get("https://memes.blademaker.tv/api?lang=en") as response:
             jsonresponse = await response.json()
 
-    
+
     title = jsonresponse["title"]
     ups = jsonresponse["ups"]
     image = jsonresponse["image"]

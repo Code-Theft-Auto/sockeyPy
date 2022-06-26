@@ -2,8 +2,9 @@ name: CI
 
 
 on:
-  schedule:
-    - cron: "43 3 * * *"
+  push
+  #schedule:
+   # - cron: "43 3 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -16,7 +17,7 @@ jobs:
       - name: docker login on ghcr.io
         env:
           AT: ${{ secrets.AT }}
-        run: docker login ghcr.io -u code-theft-auto -p $AT
+        run: echo "$AT" | docker login ghcr.io -u code-theft-auto --password-stdin
       - name: pull python:3.10.4-slim
         run: docker pull python:3.10.4-alpine
       - name: docker build

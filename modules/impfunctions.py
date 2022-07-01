@@ -1,7 +1,6 @@
 import random
 import aiohttp
 import discord
-from io import BytesIO
 
 
 DOGAPI = "http://thedogapi.com/api/images/get.php"
@@ -16,10 +15,6 @@ async def getCatPicture():
     async with aiohttp.ClientSession( ) as session:
         async with session.get(CATAPI) as response:
             catPicture = await response.read()
-
-            if response.status_code == 200:
-                catPicture = BytesIO(catPicture)
-
         return catPicture
 
 
@@ -27,10 +22,6 @@ async def getDogPicture():
     async with aiohttp.ClientSession( ) as session:
         async with session.get(DOGAPI) as response:
             dogPicture = await response.read()
-
-            if response.status_code == 200:
-                dogPicture = BytesIO(dogPicture)
-
         return dogPicture
 
 

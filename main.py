@@ -30,5 +30,5 @@ async def main():
         await load_extension()
         TOKEN = str(os.getenv('TOKEN'))
         await bot.start(TOKEN)
-
+ 
 asyncio.run(main())
